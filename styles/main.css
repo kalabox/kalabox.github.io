@@ -6133,7 +6133,8 @@ a {
   border-color: none; }
   .btn-primary:hover {
     text-decoration: none;
-    background: #3FD8DF; }
+    background: #3FD8DF;
+    border-color: none; }
 
 .btn-secondary {
   background: #3FD8DF;
@@ -6147,7 +6148,7 @@ a {
   transition: all 0.2s linear; }
   .btn-secondary:hover {
     text-decoration: none;
-    background: #3FD8DF; }
+    background: #C2EFEB; }
 
 /* roboto font */
 /* source sans pro */
