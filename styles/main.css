@@ -7878,14 +7878,22 @@ Custom
     line-height: 23px;
     font-weight: 400; }
 
-#service {
-  padding-top: 50px;
-  border-bottom: 1px solid #EFEFEF; }
-  #service .icon-header {
+.service {
+  border-bottom: 1px solid #EFEFEF;
+  padding-top: 25px; }
+  .service a:hover {
+    text-decoration: none; }
+  .service .icon-wrapper {
+    padding-left: 10px;
+    padding-right: 10px; }
+    .service .icon-wrapper small {
+      font-size: 1em;
+      padding-top: 10px;
+      color: #ccc; }
+  .service .icon-header {
     padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 3em; }
-  #service .custom-icon {
+    padding-bottom: 50px; }
+  .service .custom-icon {
     font-size: 40px;
     margin-left: 10px;
     margin-right: 10px;
@@ -7908,11 +7916,11 @@ Custom
     -o-transition: .5s;
     transition: .5s; }
     @media (max-width: 767px) {
-      #service .custom-icon {
+      .service .custom-icon {
         padding: 8px;
         width: 45px;
         height: 45px; } }
-    #service .custom-icon img {
+    .service .custom-icon img {
       height: 70px; }
 
 .teaser {
@@ -9063,7 +9071,7 @@ Custom
 #services h3 {
   font-family: "Lato", "Helvetica Neue", Arial;
   color: #333;
-  line-height: 25px;
+  line-height: 1em;
   padding-bottom: 30px; }
   #services h3 a {
     color: #FFFFFF; }
@@ -9078,6 +9086,18 @@ Custom
 
 #services #service {
   padding-bottom: 30px; }
+
+#services .service-link {
+  margin-right: 35px;
+  border-right: 1px solid #efefef;
+  padding: .5em; }
+  #services .service-link a {
+    color: #459CE7;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1; }
+  #services .service-link a:hover {
+    text-decoration: none; }
 
 body {
   font-size: 22px; }
