@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* site specific */
 /*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1082,6 +1082,7 @@ a {
     color: #2390b9;
     text-decoration: underline; }
   a:focus {
+    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
 
@@ -2298,6 +2299,7 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
@@ -2811,6 +2813,7 @@ select[multiple].input-lg,
   -ms-user-select: none;
   user-select: none; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
   .btn:hover, .btn:focus, .btn.focus {
@@ -6054,19 +6057,19 @@ input[type="password"].form-control {
   input[type="text"].form-control::-webkit-input-placeholder,
   input[type="email"].form-control::-webkit-input-placeholder,
   input[type="password"].form-control::-webkit-input-placeholder {
-    font-weight: 400; }
+    font-weight: 300; }
   input[type="text"].form-control:-moz-placeholder,
   input[type="email"].form-control:-moz-placeholder,
   input[type="password"].form-control:-moz-placeholder {
-    font-weight: 400; }
+    font-weight: 300; }
   input[type="text"].form-control::-moz-placeholder,
   input[type="email"].form-control::-moz-placeholder,
   input[type="password"].form-control::-moz-placeholder {
-    font-weight: 400; }
+    font-weight: 300; }
   input[type="text"].form-control:-ms-input-placeholder,
   input[type="email"].form-control:-ms-input-placeholder,
   input[type="password"].form-control:-ms-input-placeholder {
-    font-weight: 400; }
+    font-weight: 300; }
   input[type="text"].form-control:focus,
   input[type="email"].form-control:focus,
   input[type="password"].form-control:focus {
@@ -9066,7 +9069,7 @@ Custom
   .service .red i {
     background: #FF8E79; }
   .service .orange i {
-    background: #FFD579; }
+    background: #FFCC4F; }
   .service .yellow i {
     background: #FFEC79; }
   .service .green i {
@@ -9165,6 +9168,28 @@ Custom
     -ms-transition: color 0.25s linear;
     -o-transition: color 0.25s linear;
     transition: color 0.25s linear; }
+
+#cta {
+  -webkit-font-smoothing: antialiased;
+  background-color: #4BB5DD; }
+  #cta .container {
+    border-top: 1px solid #ACE2F7;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  #cta .header a {
+    color: #333333; }
+  #cta .header h3 {
+    margin-top: 0;
+    font-family: "Lato", "Helvetica Neue", Arial;
+    color: #FFFFFF;
+    line-height: 25px; }
+  #cta .btn {
+    background-color: #FFCC4F;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: .5em 1em; }
 
 #footer {
   background: #4BB5DD;
@@ -9873,34 +9898,23 @@ Custom
         margin-top: 70px;
         text-align: center; } }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+#map {
+  height: 50vh;
+  min-height: 300px;
+  max-height: 500px; }
+
+.message form input.form-control {
+  color: #777;
+  font-weight: 300; }
+
 #contact-us img {
   max-height: 350px;
   margin: auto; }
-
-#contact-us #map {
-  -webkit-font-smoothing: antialiased;
-  position: relative;
-  top: -20px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35); }
-  #contact-us #map #directions {
-    position: absolute;
-    top: 50px;
-    left: 13%;
-    text-align: center;
-    width: 270px;
-    background: rgba(255, 255, 255, 0.96);
-    border-radius: 5px;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.36);
-    padding: 25px 25px 20px 25px; }
-    @media (max-width: 767px) {
-      #contact-us #map #directions {
-        display: none; } }
-    #contact-us #map #directions p {
-      font-family: Myriad Pro, Lato, Helvetica Neue, Arial;
-      font-size: 19px;
-      color: #333; }
-    #contact-us #map #directions button {
-      margin-top: 12px; }
 
 #contact-us #info {
   -webkit-font-smoothing: antialiased;
@@ -9918,6 +9932,7 @@ Custom
   #contact-us #info .message form {
     margin-top: 35px;
     width: 80%;
+    max-width: 600px;
     /* error messages from jquery validate */ }
     @media (max-width: 767px) {
       #contact-us #info .message form {
@@ -10186,13 +10201,13 @@ Custom
   border-top: 30px solid #FF8E79; }
 
 #services .hexagon-orange {
-  background-color: #FFD579; }
+  background-color: #FFCC4F; }
 
 #services .hexagon-orange:before {
-  border-bottom: 30px solid #FFD579; }
+  border-bottom: 30px solid #FFCC4F; }
 
 #services .hexagon-orange:after {
-  border-top: 30px solid #FFD579; }
+  border-top: 30px solid #FFCC4F; }
 
 #services .hexagon-yellow {
   background-color: #FFEC79; }
