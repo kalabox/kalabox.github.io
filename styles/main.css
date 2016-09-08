@@ -9377,16 +9377,42 @@ Custom
         #hero .hero-icon h3 {
           font-size: .7em; } }
 
+#recent-posts h3 {
+  margin-top: 0;
+  font-family: "Lato", "Helvetica Neue", Arial;
+  color: #333;
+  line-height: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
 #recent-posts .container {
   border-bottom: 1px solid #efefef;
   padding-bottom: 50px;
-  padding-top: 50px;
   margin-bottom: 25px; }
 
-#recent-posts .avatar {
-  max-width: 25px;
-  border-radius: 100%;
-  border: 1px solid #e0e0e0; }
+#recent-posts p {
+  font-size: .8em; }
+
+#recent-posts .title a {
+  margin-top: 0;
+  font-family: "Lato", "Helvetica Neue", Arial;
+  color: #459CE7;
+  line-height: 25px;
+  font-weight: 300;
+  font-size: 1.4em; }
+
+#recent-posts .title a:hover {
+  text-decoration: none; }
+
+#recent-posts .author {
+  font-size: .75em;
+  color: #777;
+  margin-top: 8px; }
+  #recent-posts .author .avatar {
+    margin-right: 5px;
+    max-width: 25px;
+    border-radius: 100%;
+    border: 1px solid #e0e0e0; }
 
 #sf {
   padding-top: 50px;
@@ -9880,6 +9906,15 @@ Custom
   padding-left: 40px;
   padding-top: 40px;
   padding-bottom: 40px; }
+
+#contact-thanks #rockout .container {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-bottom: 1px solid #efefef; }
+
+#contact-thanks #rockout img {
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 #services .hexagon, #services .hexagon-red, #services .hexagon-orange, #services .hexagon-yellow, #services .hexagon-green, #services .hexagon-blue {
   margin-top: 30px;
