@@ -9181,10 +9181,11 @@ Custom
     color: #FFFFFF;
     line-height: 25px; }
   #cta .btn {
+    border: 15px solid #FFCC4F;
     background-color: #FFCC4F;
     margin-top: 50px;
     border-radius: 5px;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
     padding: .5em 1em; }
 
@@ -9376,6 +9377,17 @@ Custom
         #hero .hero-icon h3 {
           font-size: .7em; } }
 
+#recent-posts .container {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-bottom: 25px; }
+
+#recent-posts .avatar {
+  max-width: 25px;
+  border-radius: 100%;
+  border: 1px solid #e0e0e0; }
+
 #sf {
   padding-top: 50px;
   padding-bottom: 50px; }
@@ -9415,7 +9427,7 @@ Custom
     margin-top: 45px; }
     #features #tabs .tabs-wrapper .nav-tabs {
       text-align: center;
-      border-bottom: 2px solid #EDEDED; }
+      border-bottom: 1px solid #EFEFEF; }
       @media (max-width: 991px) {
         #features #tabs .tabs-wrapper .nav-tabs {
           display: none; } }
@@ -9449,7 +9461,8 @@ Custom
             color: #72C8E9;
             background: none; }
     #features #tabs .tabs-wrapper .tab-content {
-      margin-top: 60px; }
+      margin-top: 60px;
+      border-bottom: 1px solid #EFEFEF; }
       #features #tabs .tabs-wrapper .tab-content .tab-pane {
         height: 325px; }
         @media (max-width: 991px) {
@@ -9820,8 +9833,7 @@ Custom
 #article #page-content .container {
   border-bottom: 1px solid #efefef;
   padding-bottom: 50px;
-  padding-top: 50px;
-  margin-bottom: 100px; }
+  padding-top: 50px; }
 
 #article #main-pic .container {
   border-bottom: 1px solid #efefef;
