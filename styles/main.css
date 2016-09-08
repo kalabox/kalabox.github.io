@@ -9641,7 +9641,6 @@ Custom
       border: 0;
       color: #FFFFFF;
       text-align: center;
-      display: table-cell;
       vertical-align: middle;
       width: 60px;
       height: 60px;
@@ -9805,76 +9804,29 @@ Custom
       #staff h3 {
         line-height: 50px; } }
 
-#blogpost-wrapper {
-  margin-top: 50px; }
-  #blogpost-wrapper .main-pic img {
-    margin: 0 auto; }
-  #blogpost-wrapper .post {
-    float: none;
-    margin: 0 auto;
-    margin-top: 35px;
-    margin-bottom: 50px; }
-    #blogpost-wrapper .post .title {
-      font-family: Myriad Pro, Lato, Helvetica Neue, Arial;
-      font-size: 31px;
-      font-weight: 600;
-      margin-top: 40px;
-      color: #252525; }
-      @media (max-width: 767px) {
-        #blogpost-wrapper .post .title {
-          font-size: 26px;
-          line-height: 28px; } }
-    #blogpost-wrapper .post .author {
-      color: #757575;
-      font-weight: 300;
-      margin-top: 4px;
-      position: relative; }
-      @media (max-width: 767px) {
-        #blogpost-wrapper .post .author {
-          font-size: 12px;
-          margin-top: 10px; } }
-      #blogpost-wrapper .post .author .avatar {
-        max-width: 56px;
-        border-radius: 50px;
-        position: absolute;
-        left: -77px;
-        top: -18px;
-        border: 1px solid #e0e0e0; }
-    #blogpost-wrapper .post .content {
-      margin-top: 35px;
-      font-family: "Merriweather", Georgia;
-      font-size: 15px;
-      line-height: 30px;
-      color: #353535;
-      margin-bottom: 25px; }
-      #blogpost-wrapper .post .content p {
-        margin-top: 28px; }
-      #blogpost-wrapper .post .content blockquote {
-        border-left: 2px solid #CE1836;
-        color: rgba(51, 51, 51, 0.55);
-        margin: 35px 0;
-        padding: 5px 20px;
-        padding-left: 23px; }
-        #blogpost-wrapper .post .content blockquote p {
-          margin: 0;
-          line-height: 30px;
-          font-weight: normal; }
-        #blogpost-wrapper .post .content blockquote .quote-author {
-          margin-top: 14px; }
-      #blogpost-wrapper .post .content img {
-        margin: 0 auto;
-        margin-top: 55px;
-        margin-bottom: 55px; }
-      #blogpost-wrapper .post .content .divider {
-        border-bottom: 1px solid #DEDEDC;
-        width: 20%;
-        margin: 0 auto;
-        margin-top: 35px;
-        margin-bottom: 35px; }
-    #blogpost-wrapper .post .share {
-      margin-top: 50px; }
-    #blogpost-wrapper .post .other-posts {
-      margin-top: 50px; }
+#article p {
+  color: #777777;
+  font-size: 1em;
+  margin-top: 1em;
+  line-height: 1.3em;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased; }
+
+#article .avatar {
+  max-width: 25px;
+  border-radius: 100%;
+  border: 1px solid #e0e0e0; }
+
+#article #page-content .container {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-bottom: 100px; }
+
+#article #main-pic .container {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 50px;
+  padding-top: 50px; }
 
 #posts {
   -webkit-font-smoothing: antialiased;
