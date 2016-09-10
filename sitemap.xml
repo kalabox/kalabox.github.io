@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url> <loc>http://www.thinktandem.io/404.html</loc> </url>
+<url> <loc>http://www.thinktandem.io/about/</loc> <lastmod>2016-08-03</lastmod> </url>
+<url> <loc>http://www.thinktandem.io/contact-thanks/</loc> </url>
+<url> <loc>http://www.thinktandem.io/contact/</loc> </url>
+<url> <loc>http://www.thinktandem.io/</loc> </url>
+<url> <loc>http://www.thinktandem.io/services/</loc> </url>
+<url> <loc>http://www.thinktandem.io/blog/2016/08/03/on-evading-death/</loc> </url>
+<url> <loc>http://www.thinktandem.io/blog/2016/08/03/on-evading-death2/</loc> </url>
+<url> <loc>http://www.thinktandem.io/blog/1/</loc> </url>
+<url> <loc>http://www.thinktandem.io/blog/</loc> </url>
+<url> <loc>http://www.thinktandem.io/blog/2/</loc> </url>
+<url> <loc>http://www.thinktandem.io/blog/3/</loc> </url>
+<url> <loc>http://www.thinktandem.io/topics/deployment/</loc> </url>
+<url> <loc>http://www.thinktandem.io/topics/docker/</loc> </url>
+<url> <loc>http://www.thinktandem.io/topics/hosting/</loc> </url>
+<url> <loc>http://www.thinktandem.io/topics/localdev/</loc> </url>
+<url> <loc>http://www.thinktandem.io/topics/misc/</loc> </url>
+<url> <loc>http://www.thinktandem.io/topics/scaling/</loc> </url>
+<url> <loc>http://www.thinktandem.io/topics/strategy/</loc> </url>
+<url> <loc>http://www.thinktandem.io/topics/support/</loc> </url>
+<url> <loc>http://www.thinktandem.io/topics/training/</loc> </url>
+<url> <loc>http://www.thinktandem.io/topics/testing/</loc> </url>
+<url> <loc>http://www.thinktandem.io/topics/tagged/</loc> </url>
+</urlset>

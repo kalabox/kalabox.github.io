@@ -9821,6 +9821,57 @@ Custom
         margin: 0 auto;
         margin-bottom: 45px; } }
 
+#value h3 {
+  margin-top: 0;
+  font-family: "Lato", "Helvetica Neue", Arial;
+  color: #333;
+  line-height: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+#value .container {
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 25px; }
+
+#valuesec .container {
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 25px;
+  padding-bottom: 25px; }
+  #valuesec .container .message {
+    padding: 50px;
+    padding-top: 80px;
+    padding-right: 10px;
+    color: #777777;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased; }
+    #valuesec .container .message .btn-primary {
+      background: #72F0A1;
+      color: #333;
+      display: block;
+      margin-top: 30px; }
+  #valuesec .container .graphix {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  #valuesec .container .funcloud {
+    width: 425px;
+    height: 425px;
+    background-color: #4BB5DD;
+    border: 18px solid #ACE2F7;
+    border-radius: 50%; }
+    #valuesec .container .funcloud a:hover {
+      text-decoration: none; }
+    #valuesec .container .funcloud i {
+      font-size: 300px;
+      color: #FFFFFF;
+      position: relative;
+      top: 25px;
+      display: block; }
+    #valuesec .container .funcloud small {
+      color: #FFFFFF;
+      text-transform: uppercase; }
+
 /**
  * Pages
  */
@@ -9916,84 +9967,6 @@ Custom
   margin-top: 25px;
   margin-bottom: 25px; }
 
-#services .hexagon, #services .hexagon-red, #services .hexagon-orange, #services .hexagon-yellow, #services .hexagon-green, #services .hexagon-blue {
-  margin-top: 30px;
-  width: 104px;
-  height: 60px;
-  background-color: transparent;
-  position: relative;
-  text-align: center;
-  color: #FFFFFF; }
-  #services .hexagon i, #services .hexagon-red i, #services .hexagon-orange i, #services .hexagon-yellow i, #services .hexagon-green i, #services .hexagon-blue i {
-    font-size: 75px;
-    position: relative;
-    top: -8px; }
-
-#services .hexagon:before, #services .hexagon-red:before, #services .hexagon-orange:before, #services .hexagon-yellow:before, #services .hexagon-green:before, #services .hexagon-blue:before {
-  content: " ";
-  width: 0;
-  height: 0;
-  border-bottom: 30px solid transparent;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-  position: absolute;
-  top: -30px;
-  left: 0; }
-
-#services .hexagon:after, #services .hexagon-red:after, #services .hexagon-orange:after, #services .hexagon-yellow:after, #services .hexagon-green:after, #services .hexagon-blue:after {
-  content: "";
-  width: 0;
-  position: absolute;
-  bottom: -30px;
-  left: 0px;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent; }
-
-#services .hexagon-red {
-  background-color: #FF8E79; }
-
-#services .hexagon-red:before {
-  border-bottom: 30px solid #FF8E79; }
-
-#services .hexagon-red:after {
-  border-top: 30px solid #FF8E79; }
-
-#services .hexagon-orange {
-  background-color: #FFCC4F; }
-
-#services .hexagon-orange:before {
-  border-bottom: 30px solid #FFCC4F; }
-
-#services .hexagon-orange:after {
-  border-top: 30px solid #FFCC4F; }
-
-#services .hexagon-yellow {
-  background-color: #FFEC79; }
-
-#services .hexagon-yellow:before {
-  border-bottom: 30px solid #FFEC79; }
-
-#services .hexagon-yellow:after {
-  border-top: 30px solid #FFEC79; }
-
-#services .hexagon-green {
-  background-color: #72F0A1; }
-
-#services .hexagon-green:before {
-  border-bottom: 30px solid #72F0A1; }
-
-#services .hexagon-green:after {
-  border-top: 30px solid #72F0A1; }
-
-#services .hexagon-blue {
-  background-color: #75CAEB; }
-
-#services .hexagon-blue:before {
-  border-bottom: 30px solid #75CAEB; }
-
-#services .hexagon-blue:after {
-  border-top: 30px solid #75CAEB; }
-
 #services .equation .service {
   border: 0; }
   #services .equation .service .icon-header {
@@ -10046,6 +10019,87 @@ Custom
 
 body {
   font-size: 22px; }
+
+a.hexagon:hover, a.hexagon-red:hover, a.hexagon-orange:hover, a.hexagon-yellow:hover, a.hexagon-green:hover, a.hexagon-blue:hover {
+  color: #FFFFFF; }
+
+.hexagon, .hexagon-red, .hexagon-orange, .hexagon-yellow, .hexagon-green, .hexagon-blue {
+  margin-top: 30px;
+  width: 104px;
+  height: 60px;
+  background-color: transparent;
+  position: relative;
+  text-align: center;
+  color: #FFFFFF; }
+  .hexagon i, .hexagon-red i, .hexagon-orange i, .hexagon-yellow i, .hexagon-green i, .hexagon-blue i {
+    font-size: 75px;
+    position: relative;
+    top: -8px; }
+
+.hexagon:before, .hexagon-red:before, .hexagon-orange:before, .hexagon-yellow:before, .hexagon-green:before, .hexagon-blue:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid transparent;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  position: absolute;
+  top: -30px;
+  left: 0; }
+
+.hexagon:after, .hexagon-red:after, .hexagon-orange:after, .hexagon-yellow:after, .hexagon-green:after, .hexagon-blue:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -30px;
+  left: 0px;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent; }
+
+.hexagon-red {
+  background-color: #FF8E79; }
+
+.hexagon-red:before {
+  border-bottom: 30px solid #FF8E79; }
+
+.hexagon-red:after {
+  border-top: 30px solid #FF8E79; }
+
+.hexagon-orange {
+  background-color: #FFCC4F; }
+
+.hexagon-orange:before {
+  border-bottom: 30px solid #FFCC4F; }
+
+.hexagon-orange:after {
+  border-top: 30px solid #FFCC4F; }
+
+.hexagon-yellow {
+  background-color: #FFEC79; }
+
+.hexagon-yellow:before {
+  border-bottom: 30px solid #FFEC79; }
+
+.hexagon-yellow:after {
+  border-top: 30px solid #FFEC79; }
+
+.hexagon-green {
+  background-color: #72F0A1; }
+
+.hexagon-green:before {
+  border-bottom: 30px solid #72F0A1; }
+
+.hexagon-green:after {
+  border-top: 30px solid #72F0A1; }
+
+.hexagon-blue {
+  background-color: #75CAEB; }
+
+.hexagon-blue:before {
+  border-bottom: 30px solid #75CAEB; }
+
+.hexagon-blue:after {
+  border-top: 30px solid #75CAEB; }
 
 a:focus, button:focus {
   outline: none; }
