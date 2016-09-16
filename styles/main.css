@@ -9685,7 +9685,12 @@ Custom
     padding-top: 40px;
     padding-bottom: 40px; }
     #social .social .icons a {
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 1em; }
+      @media (max-width: 768px) {
+        #social .social .icons a {
+          width: 65px; } }
     #social .social .icons i {
       font-size: 40px;
       margin-left: 10px;
