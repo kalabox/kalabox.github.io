@@ -426,47 +426,6 @@ ul {
   }
 }
 
-.pagination {
-  display: inline-block;
-  padding-left: 0;
-  margin: 31px 0;
-  border-radius: 4px;
-}
-
-.pagination > li {
-  display: inline;
-}
-
-.pagination > li > a {
-  position: relative;
-  float: left;
-  padding: 6px 12px;
-  line-height: 1.42857;
-  text-decoration: none;
-  color: #4BB5DD;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  margin-left: -1px;
-}
-
-.pagination > li:first-child > a {
-  margin-left: 0;
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
-}
-
-.pagination > li:last-child > a {
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-.pagination > .active > a {
-  z-index: 3;
-  color: #fff;
-  background-color: #4BB5DD;
-  border-color: #4BB5DD;
-}
-
 .label {
   display: inline;
   padding: .2em .6em .3em;
@@ -506,13 +465,6 @@ p {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
-
-.pagination > .active > a {
-  background-color: #4BB5DD;
-  border-color: #3FD8DF;
-}
-
-
 
 @media (min-width: 768px) {
   .navbar-nav > li {
@@ -626,28 +578,6 @@ p {
   margin-top: 55px;
 }
 
-#posts .pages {
-  border-top: 1px solid #efefef;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-@media (max-width: 991px) {
-  #posts .pages {
-    text-align: center;
-  }
-}
-
-#posts .pages .pagination > li > a {
-  margin-right: 10px;
-  border-radius: 100%;
-  padding: 4px 12px;
-}
-
-#posts .pages .active {
-  background-color: #4BB5DD;
-}
-
 body {
   font-size: 22px;
 }
@@ -715,7 +645,7 @@ body {
 <body class="on-evading-death">
   <noscript id="deferred-styles">
     
-      <link rel="stylesheet" type="text/css" href="styles/main.css?1474229255633">
+      <link rel="stylesheet" type="text/css" href="styles/main.css?1474403505202">
       <link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'>
     
   </noscript>
@@ -815,6 +745,31 @@ body {
 <p>At 21, careening through the alleys of Berkeley behind my brother on a sport tandem bike, each curve challenged both my balance and confidence in our ability to make it home alive. In retrospect, perhaps this was my first lesson in software consulting.</p>
 <p>A consulting relationship relies on trust. A <em>healthy</em> consulting relationship relies on trust that is founded in transparency and mutual purpose. Blind trust is never required; instead, each partner is able to communicate and move the project forward seemlessly.</p>
 <p>When Mike Pirog and I decided to form a new software consultancy...</p>
+<pre><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span> <span class="token property">color</span><span class="token punctuation">:</span> red <span class="token punctuation">}</span></code></pre>
+
+<pre><code class="language-php">
+
+<span class="token comment" spellcheck="true">/**
+ * @file
+ * PHP Router. Handles 404 pages gracefully.
+ */</span>
+
+<span class="token comment" spellcheck="true">// Check if the request is to the homepage.</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isset</span><span class="token punctuation">(</span><span class="token variable">$_SERVER</span><span class="token punctuation">[</span><span class="token string">&apos;REQUEST_URI&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token variable">$_SERVER</span><span class="token punctuation">[</span><span class="token string">&apos;REQUEST_URI&apos;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">&apos;/&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token variable">$content</span> <span class="token operator">=</span> <span class="token function">file_get_contents</span><span class="token punctuation">(</span><span class="token constant">__DIR__</span> <span class="token punctuation">.</span> <span class="token string">&apos;/index.html&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">echo</span> <span class="token variable">$content</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// Since the page was not found, output the 404 page.</span>
+  <span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;HTTP/1.0 404 Not Found&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token variable">$content</span> <span class="token operator">=</span> <span class="token function">file_get_contents</span><span class="token punctuation">(</span><span class="token constant">__DIR__</span> <span class="token punctuation">.</span> <span class="token string">&apos;/404.html&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">echo</span> <span class="token variable">$content</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre>
+
+
+<p>wefwef</p>
 
       </div>
     </div>
@@ -841,7 +796,43 @@ body {
         <div class="recent">
 
           <div class="title">
+            <a href="blog/2016/09/20/rejoice-kalabox-20-released">Rejoice: Kalabox 2.0 Released</a>
+          </div>
+
+          <div class="author">
+            <img src="images/authors/teaser/alec-reynolds.jpg" class="avatar" alt="author" />Alec Reynolds, September 20th 2016
+          </div>
+
+          <p class="intro">
+            Proudly announcing the release of Kalabox 2.0, our open-source Docker-powered local development tool that provides the fastest way to develop WordPress and Drupal applications.
+          </p>
+
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="recent">
+
+          <div class="title">
             <a href="blog/2016/08/03/on-evading-death">On evading death</a>
+          </div>
+
+          <div class="author">
+            <img src="images/authors/teaser/alec-reynolds.jpg" class="avatar" alt="author" />Alec Reynolds, August 3rd 2016
+          </div>
+
+          <p class="intro">
+            An introduction to Tandem, who we are, what we do, and why you, a human being with places to go and people to see, should spend some time with us.
+          </p>
+
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="recent">
+
+          <div class="title">
+            <a href="blog/2016/08/03/on-evading-death2">On evading death2</a>
           </div>
 
           <div class="author">
@@ -923,8 +914,8 @@ body {
   
 
   
-    <script src="js/scripts.js?1474229255642"></script>
-    <script src="vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js?1474229255642"></script>
+    <script src="js/scripts.js?1474403505218"></script>
+    <script src="vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js?1474403505218"></script>
     
     <script type="application/ld+json">
       [{"@context":"http://schema.org","@type":"WebSite","name":"Tandem","alternateName":"The site for Tandem, a software strategy firm.","url":"http://www.thinktandem.io"},{"@context":"http://schema.org","@type":"Organization","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"On evading death","alternativeHeadline":"An introduction to Tandem, who we are, what we do, and why you, a human being with places to go and people to see, should spend some time with us.","image":"holder.js/1000x200/#222:#aaa/text:{{title|slug}}","keywords":["deployment","docker","hosting","localdev","misc","scaling","strategy","support","training","testing"],"publisher":{"@context":"http://schema.org","@type":"Organization","name":"Kalabox Inc. DBA Tandem","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]},"datePublished":"2016-08-03T00:00:00.000Z","dateCreated":"2016-08-03T00:00:00.000Z","description":"An introduction to Tandem, who we are, what we do, and why you, a human being with places to go and people to see, should spend some time with us.","author":{"@type":"Person","name":"author"}}]
