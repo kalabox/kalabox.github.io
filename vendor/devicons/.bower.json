@@ -36,7 +36,7 @@
     "branch": "dynamic-fontpath",
     "commit": "2becf6fbe80e59a0ef18d2e40b5b148f90776467"
   },
-  "_source": "https://github.com/pirog/devicons.git",
+  "_source": "https://github.com/thinktandem/devicons.git",
   "_target": "dynamic-fontpath",
-  "_originalSource": "https://github.com/pirog/devicons.git"
+  "_originalSource": "https://github.com/thinktandem/devicons.git"
 }
