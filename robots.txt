@@ -6,8 +6,8 @@ Disallow: quotes/koenig/index.html
 Disallow: services/hosting/index.html
 Disallow: services/local/index.html
 Disallow: services/support/index.html
-Disallow: services/training/index.html
 Disallow: services/testing/index.html
+Disallow: services/training/index.html
 Disallow: staff/pirog/index.html
 Disallow: staff/reynolds/index.html
 Sitemap: http://www.thinktandem.io/sitemap.xml
