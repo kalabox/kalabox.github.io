@@ -19,13 +19,13 @@
 
   <title>
     
-  Tandem | Let&#39;s Get Small: Introduction to Microservices | Let&#39;s Get Small: Introduction to Microservices | 
+  Tandem | Node Microservices on Docker Cloud | Node Microservices on Docker Cloud | 
 
   </title>
   <meta name="robots" content="noindex, nofollow">
-  <link rel="canonical" href="http://www.thinktandem.io/blog/2016/09/10/let-s-get-small-introduction-to-microservices/" />
-  <meta property="og:url" content="http://www.thinktandem.io/blog/2016/09/10/let-s-get-small-introduction-to-microservices/" />
-  <meta property="og:title" content="Let&#39;s Get Small: Introduction to Microservices" />
+  <link rel="canonical" href="http://www.thinktandem.io/blog/2016/09/23/node-microservices-on-docker-cloud/" />
+  <meta property="og:url" content="http://www.thinktandem.io/blog/2016/09/23/node-microservices-on-docker-cloud/" />
+  <meta property="og:title" content="Node Microservices on Docker Cloud" />
   
   <meta property="og:type" content="website" />
   
@@ -645,7 +645,7 @@ body {
 <body class="">
   <noscript id="deferred-styles">
     
-      <link rel="stylesheet" type="text/css" href="styles/main.css?1474655001135">
+      <link rel="stylesheet" type="text/css" href="styles/main.css?1474655001147">
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic">
     
   </noscript>
@@ -720,8 +720,8 @@ body {
       <div class="container">
         <div class="row header">
           <div class="col-md-12 text-center">
-            <h1>Let's Get Small: Introduction to Microservices</h1>
-            <small>by <img class="avatar" src="images/authors/teaser/alec-reynolds.jpg" alt="author" /> Alec Reynolds on September 10th 2016</small>
+            <h1>Node Microservices on Docker Cloud</h1>
+            <small>by <img class="avatar" src="images/authors/teaser/alec-reynolds.jpg" alt="author" /> Alec Reynolds on September 23rd 2016</small>
           </div>
         </div>
       </div>
@@ -732,7 +732,7 @@ body {
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <img src="images/articles/microservices.png" class="img-responsive blog-main-image" alt="blogpost" />
+              <img src="images/articles/node-microservices-docker-cloud/node-microservices-docker-cloud.png" class="img-responsive blog-main-image" alt="blogpost" />
             </div>
           </div>
         </div>
@@ -741,21 +741,87 @@ body {
 
     <div id="page-content">
       <div class="container">
-        <p>Let&#39;s repeat a mantra together: &quot;change&quot; is the essence of web application development. No sooner have we developed a &quot;complete&quot; web project than does our API datasource change, our business needs grow, or (the best possible problem) our userbase swells beyond the capacity of our system.</p>
-<blockquote>
-<p>If change is our only constant, we must work with tools that embrace it.</p>
-</blockquote>
-<h2 id="introducing-microservices-adaptable-components-for-change">Introducing Microservices: Adaptable Components for Change</h2>
-<p>There are many ways to embrace change, but after many years, I&#39;m convinced that creating small, specialized apps in a standardized manner is the best way to accomodate the realities of software development.</p>
-<p>&quot;Microservices&quot; are simply very small applications that do one or two things very well. They communicate with one another via well-defined APIs, which allows easy refactoring and extension of the application as a whole: if one feature becomes outdated, simply refactor or replace the resposible microservice(s). Since the microservices program to an API, significant data migration and unexpected data model tusseling can be avoided.</p>
-<h2 id="docker-and-nodejs-tools-for-building-microservices">Docker and NodeJS: Tools for Building Microservices</h2>
-<p>NodeJS gives us a convenient framework for building microservices that can handle a high throughput of requests. Because of its non-blocking asynchronous nature, Node is an ideal candidate for creating API servers and highly available microservices alike (check out <a href="https://www.codeschool.com/blog/2014/10/30/understanding-node-js">this blog post</a> if you&#39;re unfamiliar with these advantages of NodeJS). And the sheer range of modules available through the Node Package Manager (NPM) makes the ecosystem a strong choice.</p>
-<p>Once we have multiple microservices in our application, it&#39;s essential that we have automated tools for deployment and scaling. This is where Docker comes in. Docker allows us to package our microservices into isolated &quot;containers,&quot; tiny virtual environments that can be created and destroyed much more quickly than traditional virtual machines (VMs).</p>
-<p>Everything that a microservice needs to run is described within a single Dockerfile, the set of instructions that build a Docker container. For example, if we&#39;re creating a small NodeJS application, the Dockerfile for our app would reference the offical NodeJS Docker image. We&#39;d then include an &quot;entrypoint&quot; which would start running our Node app. The <a href="https://nodejs.org/en/docs/guides/nodejs-docker-webapp">offical NodeJS post</a> on Dockerizing a Node app does a good job of explaining this process, and we&#39;ll be going into the technical details in a subsequent blog post as well.</p>
-<h2 id="deploy-and-scale-microservice-applications-with-docker-cloud">Deploy and Scale Microservice Applications with Docker Cloud</h2>
-<p>Even if the process of creating single microservices may seem clear, the idea of networking, deploying, and scaling dozens of microservices may seem daunting. Fortunately, there are many good Docker &quot;orchestration&quot; tools that provide ways to perform these tasks. A great one to start with is Docker Cloud.</p>
-<p>Docker Cloud gives even novice programmers a simple interface to host Docker-powered applications. Tasks that were formerly complex, like connecting networks of microservices together properly or scaling services, are made trivial by Docker Cloud. For a small monthly fee, it gives you a powerful set of tools and the option to host your apps on AWS, Microsoft Azure, Digital Ocean, and more. We&#39;ll be showing you the ropes with Docker Cloud in a future post, so stay tuned for that!</p>
-<p>UPDATE: My follow-up post is <a href="/blog/2016/09/22/node-microservices-on-docker-cloud">now available</a>, so you can continue with some hands-on fun.</p>
+        <p>If you&apos;re read my <a href="/blog/2016/09/10/let-s-get-small-introduction-to-microservices">previous article</a> introducing the idea of microservices and discussing why NodeJS and Docker are ideal tools to implement microservices with, then you&apos;re probably hungry for some action!</p>
+<p>The following instructions take you through the basic steps necessary to create your first NodeJS app and host it on Docker Cloud.</p>
+<h2 id="1-setup">1. Setup</h2>
+<p>In 2016, setting up your local computer to create apps with NodeJS and Docker is easier than ever before. Simply...</p>
+<ul>
+<li><a href="https://www.docker.com/products/docker">Install Docker</a></li>
+<li><a href="https://nodejs.org">Install NodeJS</a></li>
+<li><a href="https://hub.docker.com">Create a Docker ID on Docker Hub</a></li>
+</ul>
+<h2 id="2-create-your-microservice">2. Create Your Microservice</h2>
+<p>For demonstration purposes, our first &quot;microservice&quot; will be a tiny NodeJS app tasked with the vital function of keeping track of our strategic beer reserve. Grab the app and run it:</p>
+<p><pre class="language-bash"><code class="language-bash">
+<span class="token function">git</span> clone git@github.com:thinktandem/99beers-demo.git <span class="token operator">&amp;&amp;</span> <span class="token function">cd</span> 99beers-demo
+npm <span class="token function">install</span>
+node index.js
+</code></pre></p>
+<p>Now you can visit <a href="http://localhost">http://localhost</a> in your favorite browser to access the app.</p>
+<p>The Node app itself is pretty simple. We&apos;re using Express, which allows us an easy way to setup routing. Everytime another thirsty user makes a request to our app, they take another beer off the wall.</p>
+<h2 id="3-add-a-dockerfile">3. Add a Dockerfile</h2>
+<p>Running the app via Node on our local machine may be easy, but we need to guarantee that this mission-critical app runs the same way on every environment, from our laptop to a remote cloud server. To do that, we&apos;ll create a Docker container that runs our 99beers-demo app.</p>
+<p>The Dockerfile included with the 99beers-demo app creates a simple, reusable structure:</p>
+<p><pre class="language-docker"><code class="language-docker">
+<span class="token keyword">FROM</span> node<span class="token punctuation">:</span>argon
+<span class="token comment" spellcheck="true"># Create app directory</span>
+<span class="token keyword">RUN</span> mkdir <span class="token punctuation">-</span>p /usr/src/app
+<span class="token keyword">WORKDIR</span> /usr/src/app
+<span class="token comment" spellcheck="true"># Install app dependencies</span>
+<span class="token keyword">COPY</span> package.json /usr/src/app/
+<span class="token keyword">RUN</span> npm install
+<span class="token comment" spellcheck="true"># Bundle app source</span>
+<span class="token keyword">COPY</span> . /usr/src/app
+<span class="token keyword">EXPOSE</span> 80
+<span class="token keyword">CMD</span> <span class="token punctuation">[</span> <span class="token string">&quot;node&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;index.js&quot;</span> <span class="token punctuation">]</span>
+</code></pre></p>
+<p>The &quot;FROM&quot; keyword allows us to inherit all of the configuration from the official NodeJS docker image. This gives us all the tools we need in a tiny virtualized Linux environment.</p>
+<p>Next we use NPM to install our dependencies and make sure our app codebase is copied into the correct working directory (WORKDIR).</p>
+<p>Finally, we use the &quot;EXPOSE&quot; keyword to specify the port we want our container to expose its entrypoint on, and use the &quot;CMD&quot; keyword to define the action we want our container to perform when a request is made to it.</p>
+<p>To see this all in action, you&apos;ll need to build the Docker image locally and run it. Remember to insert your Docker Hub username in the code below:</p>
+<p><pre class="language-bash"><code class="language-bash">
+docker build -t <span class="token punctuation">[</span>DOCKER_HUB_USERNAME<span class="token punctuation">]</span>/99beers-demo <span class="token keyword">.</span>
+docker run -p 8080:80 <span class="token punctuation">[</span>DOCKER_HUB_USERNAME<span class="token punctuation">]</span>/99beers-demo
+</code></pre></p>
+<p>Note the -p tag on the <code>docker run</code> command. This specifies the port mapping, linking port 80 on the container to be available on port 8080 on your local machine. To access the running docker app, you can visit <a href="http://localhost:8080">http://localhost:8080</a>.</p>
+<h2 id="4-push-to-docker-hub">4. Push to Docker Hub</h2>
+<p>Docker Hub is kind of like Github for Docker images. Deploying your Docker image to Docker Hub makes it available for other users to use or build off of. For example, the &quot;node/argon&quot; Docker image that we inherit in our Dockerfile is <a href="https://hub.docker.com/_/node">hosted on Docker Hub</a>.</p>
+<p>In our case, we particularly want our Docker image on Docker Hub so we can use it in Docker Cloud. To push it to Docker Cloud, simply run the <code>docker push</code> command:</p>
+<p><pre class="language-bash"><code class="language-bash">
+docker push <span class="token punctuation">[</span>DOCKER_HUB_USERNAME<span class="token punctuation">]</span>/99beers-demo
+</code></pre></p>
+<h2 id="5-create-a-docker-cloud-node">5. Create a Docker Cloud Node</h2>
+<p>Now we&apos;re set to get our app live on Docker Cloud! If you haven&apos;t already, associate a cloud provider with your Docker Cloud account by visiting the &quot;Cloud Settings -&gt; Cloud providers&quot; section: <img src="/images/articles/node-microservices-docker-cloud/docker_cloud_providers.png" alt="alt text" title="Docker Cloud Cloud Settings"></p>
+<p>If you don&apos;t have a preferred provider, the <a href="https://aws.amazon.com/free/">Amazon Web Service&apos;s &quot;free tier&quot;</a> (12 months of free service for a t2-micro server) is a convenient place to start.</p>
+<p>Now you&apos;ll add a new &quot;node&quot; (a new server) to your configuration. Visit &quot;Nodes&quot; and select &quot;Create&quot;. This should start up the Wizard. For right now, the defaults should be acceptable. The most important thing is selecting a t2-micro or lower server so you don&apos;t get charged for the service if you&apos;re using the AWS free tier. The following configuration settings should be servicable:</p>
+<p><img src="/images/articles/node-microservices-docker-cloud/docker_cloud_node.png" alt="alt text" title="Docker Cloud Node Settings"></p>
+<p>Note that you could run multiple nodes and even group nodes from different regions into a single node cluster. This is one way you can scale capacity for your app, but obviously a method that isn&apos;t necessary for our example.</p>
+<h2 id="6-create-a-docker-service">6. Create a Docker Service</h2>
+<p>To run Docker containers on our node, we&apos;ll create what Docker Cloud calls a &quot;service&quot;. Navigate to &quot;Applications -&gt; Services&quot; and click the &quot;Create&quot; button. In the first step, you&apos;ll need to select the Docker image you uploaded to Docker Hub. Click on the middle &quot;globe&quot; icon to search Docker Hub for your image:</p>
+<p><img src="/images/articles/node-microservices-docker-cloud/docker_cloud_search_image.png" alt="alt text" title="Search Docker Hub for your Image"></p>
+<p>Now you&apos;re presented with a page where you can designate the settings for your service. There are a lot of options, but don&apos;t panic! For our demo, there&apos;s only one thing you need to change. To expose our service to the outside world, go to the &quot;Ports&quot; section and publish the port to the world by click on &quot;Published&quot;:</p>
+<p><img src="/images/articles/node-microservices-docker-cloud/docker_cloud_publish_port.png" alt="alt text" title="Publish a public port for your service."></p>
+<p>In fact, this is the same as using the &quot;-p&quot; tag we utilized in our <code>docker run</code> command (<code>docker run -p 8080:80 [DOCKER_HUB_USERNAME]/99beers-demo</code>). We&apos;re mapping the container&apos;s exposed port to a port publicly available on the internet.</p>
+<p>Click &quot;Create &amp; Deploy&quot;, and once your container is running (this should only take a few seconds...lightning fast, right?), looks for the &quot;Endpoints&quot; section on the page and click the link:</p>
+<p><img src="/images/articles/node-microservices-docker-cloud/docker_cloud_visit_service.png" alt="alt text" title="Visit your service online."></p>
+<p>Boom! Your service is now publicly available online.</p>
+<h2 id="7-basic-scaling-on-docker-cloud">7. Basic Scaling on Docker Cloud</h2>
+<p>You may notice on this page that there&apos;s a slider at the top labeled &quot;Scale&quot;:</p>
+<p><img src="/images/articles/node-microservices-docker-cloud/docker_cloud_scale.png" alt="alt text" title="Scale the number of containers in your service."></p>
+<p>This is one tool to help you scale the capacity of your application by adding more containers to respond to requests. Try dragging the slider to &quot;3&quot; and clicking on &quot;Scale&quot;. You&apos;ll notice that two more links appear in the &quot;Endpoints&quot; section:</p>
+<p><img src="/images/articles/node-microservices-docker-cloud/docker_cloud_scale.png" alt="alt text" title="Scale the number of containers in your service."></p>
+<p>Congratulations, you&apos;ve just created two more containers with a click!</p>
+<p>However, our victory is somewhat hollow. Since these are three separate containers, all we can&apos;t do much more than visit each individual container on its own URL. This doesn&apos;t do anything to scale our application.</p>
+<p>To handle more traffic, we need to create a proxy service that will route requests to this pool of containers. Go back to the main &quot;Services&quot; page and click &quot;Create&quot; once more. This time we&apos;ll use the pre-made haproxy image suggested by Docker Cloud on the first page:</p>
+<p><img src="/images/articles/node-microservices-docker-cloud/docker_cloud_create_haproxy.png" alt="alt text" title="Select haproxy image."></p>
+<p>Like our 99beer-demo service, we want to publish the haproxy server to the world, but because it will be the main entrypoint to our application, we&apos;ll explicitly publish it as port 80 so we don&apos;t have to specify a port when visiting it:</p>
+<p><img src="/images/articles/node-microservices-docker-cloud/docker_cloud_publish_haproxy_port.png" alt="alt text" title="Select haproxy port."></p>
+<p>Finally, we&apos;ll create a &quot;Link&quot; from our haproxy service to our 99beers-demo service:</p>
+<p><img src="/images/articles/node-microservices-docker-cloud/docker_cloud_publish_haproxy_link.png" alt="alt text" title="Select haproxy port."></p>
+<p>Once our haproxy service has started, visit it&apos;s URL. It should now route you to whatever 99beer-demo app container is available.</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>One thing you&apos;ll quickly notice about this is that we&apos;re (somewhat) randomly accessing all three containers. Clearly if we want our application to be the canonical, definitive resource on how many beers we have left, we&apos;ll need to refactor it so our different containers can keep a unified count.</p>
+<p>We&apos;ll explore that topic in our next post, when we start discussing more advanced networking of Docker containers, ways you can integrate persistent file systems and stores of data, and some more ways we can scale our app. However, what we&apos;ve just shown you is enough to make a &quot;static&quot; Express app that can be scaled very easily and quickly. We run a few simple sites this very way!</p>
 
       </div>
     </div>
@@ -900,11 +966,11 @@ body {
   
 
   
-    <script src="js/scripts.js?1474655001141"></script>
-    <script src="vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js?1474655001141"></script>
+    <script src="js/scripts.js?1474655001153"></script>
+    <script src="vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js?1474655001153"></script>
     
     <script type="application/ld+json">
-      [{"@context":"http://schema.org","@type":"WebSite","name":"Tandem","alternateName":"The site for Tandem, a software strategy firm.","url":"http://www.thinktandem.io"},{"@context":"http://schema.org","@type":"Organization","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Let's Get Small: Introduction to Microservices","alternativeHeadline":"In software development, things change. Learn how a microservice architecture can help you adapt to changing requirements and scale applications in the cloud.","image":"images/articles/microservices.png","keywords":["docker","scaling","strategy","hosting"],"publisher":{"@context":"http://schema.org","@type":"Organization","name":"Kalabox Inc. DBA Tandem","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]},"datePublished":"2016-09-10T00:00:00.000Z","dateCreated":"2016-09-10T00:00:00.000Z","description":"In software development, things change. Learn how a microservice architecture can help you adapt to changing requirements and scale applications in the cloud.","author":{"@type":"Person","name":"author"}}]
+      [{"@context":"http://schema.org","@type":"WebSite","name":"Tandem","alternateName":"The site for Tandem, a software strategy firm.","url":"http://www.thinktandem.io"},{"@context":"http://schema.org","@type":"Organization","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Node Microservices on Docker Cloud","alternativeHeadline":"How to run small NodeJS in an efficient, inexpensive, and scalable manner using Docker Cloud.","image":"images/articles/node-microservices-docker-cloud/node-microservices-docker-cloud.png","keywords":["docker","scaling","strategy","hosting"],"publisher":{"@context":"http://schema.org","@type":"Organization","name":"Kalabox Inc. DBA Tandem","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]},"datePublished":"2016-09-23T00:00:00.000Z","dateCreated":"2016-09-23T00:00:00.000Z","description":"How to run small NodeJS in an efficient, inexpensive, and scalable manner using Docker Cloud.","author":{"@type":"Person","name":"author"}}]
     </script>
     
     <script>
