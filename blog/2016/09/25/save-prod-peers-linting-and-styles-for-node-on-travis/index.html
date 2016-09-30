@@ -1,0 +1,1173 @@
+<!doctype html>
+<html>
+<head>
+  <base href="/" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon" href="images/touch-icon.png">
+  <link rel="icon" href="images/favicon.png">
+  <!--[if IE]><link rel="shortcut icon" href="images/favicon.ico"><![endif]-->
+  <!-- or, set /favicon.ico for IE10 win -->
+  <meta name="msapplication-TileColor" content="#f00">
+  <meta name="msapplication-TileImage" content="images/tileicon.png">
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <title>
+    
+  Tandem | Save Prod &amp; Peers: Linting and Styles for Node on Travis | Save Prod &amp; Peers: Linting and Styles for Node on Travis | 
+
+  </title>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="http://www.thinktandem.io/blog/2016/09/25/save-prod-peers-linting-and-styles-for-node-on-travis/" />
+  <meta property="og:url" content="http://www.thinktandem.io/blog/2016/09/25/save-prod-peers-linting-and-styles-for-node-on-travis/" />
+  <meta property="og:title" content="Save Prod &amp; Peers: Linting and Styles for Node on Travis" />
+  
+  <meta property="og:type" content="website" />
+  
+  
+  <meta property="og:image" content="www.example.org/myImage.png" />
+  
+
+  
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+
+  
+
+  
+    <style>
+      @charset "UTF-8";
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+main,
+nav {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+small {
+  font-size: 80%;
+}
+
+img {
+  border: 0;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1.42857;
+  color: #6C7279;
+  background-color: #fff;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #4BB5DD;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1 {
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #555555;
+}
+
+h1 {
+  margin-top: 31px;
+  margin-bottom: 15.5px;
+}
+
+h1 {
+  font-size: 57px;
+}
+
+p {
+  margin: 0 0 15.5px;
+}
+
+small {
+  font-size: 86%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 15.5px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.col-md-2,
+.col-md-10,
+.col-md-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 992px) {
+  .col-md-2,
+  .col-md-10,
+  .col-md-12 {
+    float: left;
+  }
+
+  .col-md-2 {
+    width: 16.66667%;
+  }
+
+  .col-md-10 {
+    width: 83.33333%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+.collapse {
+  display: none;
+}
+
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav:before,
+.nav:after {
+  content: " ";
+  display: table;
+}
+
+.nav:after {
+  clear: both;
+}
+
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 31px;
+  border: 1px solid transparent;
+}
+
+.navbar:before,
+.navbar:after {
+  content: " ";
+  display: table;
+}
+
+.navbar:after {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+.navbar-header:before,
+.navbar-header:after {
+  content: " ";
+  display: table;
+}
+
+.navbar-header:after {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.navbar-collapse {
+  overflow-x: visible;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-overflow-scrolling: touch;
+}
+
+.navbar-collapse:before,
+.navbar-collapse:after {
+  content: " ";
+  display: table;
+}
+
+.navbar-collapse:after {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+}
+
+.navbar-brand {
+  float: left;
+  padding: 9.5px 15px;
+  font-size: 28px;
+  line-height: 31px;
+  height: 50px;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  margin: 4.75px -15px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 31px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  .navbar-nav > li {
+    float: left;
+  }
+
+  .navbar-nav > li > a {
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-right {
+    float: right !important;
+    margin-right: -15px;
+  }
+}
+
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+
+.label-primary {
+  background-color: #4BB5DD;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+a {
+  color: #459CE7;
+}
+
+p {
+  color: #777777;
+  font-size: 1em;
+  margin-top: 1em;
+  line-height: 1.3em;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+}
+
+.teaser .post {
+  margin-bottom: 90px;
+}
+
+.teaser .post .title {
+  font-family: "Lato", "Helvetica Neue", Arial;
+  font-size: 2em;
+  font-weight: 300;
+  color: #333;
+  line-height: 50px;
+}
+
+@media (max-width: 991px) {
+  .teaser .post .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .teaser .post .title {
+    font-size: 1.4em;
+  }
+}
+
+.teaser .post .title a {
+  color: #111;
+}
+
+.teaser .post .author {
+  color: #888;
+  margin-top: 4px;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .teaser .post .author {
+    text-align: center;
+  }
+}
+
+.teaser .post .author .avatar {
+  max-width: 100%;
+  border-radius: 100%;
+  border: 1px solid #e0e0e0;
+}
+
+@media (max-width: 991px) {
+  .teaser .post .author .avatar {
+    margin-bottom: 50px;
+    line-height: 50px;
+    max-width: 50%;
+  }
+}
+
+.teaser .post .intro {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  margin-top: 18px;
+  font-size: 20px;
+  line-height: 27px;
+  color: #4d4d4d;
+}
+
+@media (min-width: 992px) {
+  .teaser .post .intro {
+    width: 90%;
+  }
+}
+
+.teaser .post .continue-reading {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 15px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+#tags .container {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+#tags .label {
+  background: #FF8E79;
+  color: #FFFFFF;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+}
+
+#tags .label a {
+  color: #FFFFFF;
+}
+
+#info .container {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+#posts {
+  -webkit-font-smoothing: antialiased;
+  margin-top: 55px;
+}
+
+body {
+  font-size: 22px;
+}
+
+.navbar .icon-bar {
+  width: 33px;
+  height: 4px;
+  border-bottom: 3px solid #fff;
+}
+
+.navbar.hero {
+  margin: 0px;
+  border-radius: 0px;
+  border: 0px;
+  z-index: 999;
+  background-color: #72C8E9;
+  padding: .5em 0em;
+  padding-bottom: 0px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar.hero .navbar-brand {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5em;
+  font-family: "Lato", "Helvetica Neue", Arial;
+}
+
+.navbar.hero .navbar-nav > li > a {
+  color: #fff;
+  font-size: 1em;
+  padding: 15px 20px;
+  font-weight: 300;
+}
+
+.navbar.hero .navbar-nav > li.contact {
+  background-color: #FFCC4F;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .navbar.hero .navbar-nav > li.contact {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+.navbar.hero .navbar-nav > li.contact > a {
+  padding: 5px 10px;
+  color: #333;
+}
+
+.container.border-bottom {
+  border-bottom: 1px solid #efefef;
+}
+
+    </style>
+  
+
+</head>
+
+<body class="">
+  <noscript id="deferred-styles">
+    
+      <link rel="stylesheet" type="text/css" href="styles/main.css?1475200271529">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic">
+    
+  </noscript>
+  <script>
+    var loadDeferredStyles = function() {
+      var addStylesNode = document.getElementById("deferred-styles");
+      var replacement = document.createElement("div");
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement)
+      addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
+  </script>
+  <main role="main" class="main">
+    
+    <header id="header" class="navbar hero" role="banner">
+      
+        
+        <div class="navbar-header">
+  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a href="/" class="navbar-brand">Tandem</a>
+</div>
+<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+  <ul class="nav navbar-nav navbar-right">
+    
+      
+      
+        <li class="about">
+      
+        <a href="about">About</a>
+      </li>
+    
+      
+      
+        <li class="services">
+      
+        <a href="services">Services</a>
+      </li>
+    
+      
+      
+        <li class="blog">
+      
+        <a href="blog">Blog</a>
+      </li>
+    
+      
+      
+        <li class="contact">
+      
+        <a href="contact">Contact</a>
+      </li>
+    
+  </ul>
+</nav>
+
+      
+    </header>
+    
+  
+
+  <article id="article">
+
+    <div id="header-title">
+      <div class="container">
+        <div class="row header">
+          <div class="col-md-12 text-center">
+            <h1>Save Prod & Peers: Linting and Styles for Node on Travis</h1>
+            <small>by <img class="avatar" src="images/authors/teaser/mike-pirog.jpg" alt="author" /> Mike Pirog on September 25th 2016</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+      <div id="main-pic">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="images/articles/linter-is-coming/linteriscoming.jpeg" class="img-responsive blog-main-image" alt="blogpost" />
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <div id="page-content">
+      <div class="container">
+        <h2 id="a-variation-on-a-theme">A Variation on a Theme</h2>
+<p>You&apos;ve been up all night pouring your heart and soul into the <strong>NEXT BIG FEATURE</strong> of that <strong>SUPER AWESOME PROJECT EVERYONE USES</strong>. Your mental capacity diminishes by the second but you must stay the course. Rome might not have been built in a day but this <a href="http://npm.org">npm</a> module sure as hell will.</p>
+<p>You&apos;re on the final stretch. The code is done. You commit to the repo. You lay on your bed and you are feeling pretty <strong>QUOD ERAT DEMONSTRANDUM.</strong> <em>&quot;Seriously, I wrote that code like some sort of 24th century android!&quot;</em>, you think as you drift to sleep.</p>
+<div class="row">
+  <div class="col-md-4">
+    <img src="images/articles/linter-is-coming/data.gif" alt="data-winning" title="I AM ALL THAT IS ANDROID">
+  </div>
+  <div class="col-md-4">
+    <img src="images/articles/linter-is-coming/data.gif" alt="data-winning" title="I AM ALL THAT IS ANDROID">
+  </div>
+  <div class="col-md-4">
+    <img src="images/articles/linter-is-coming/data.gif" alt="data-winning" title="I AM ALL THAT IS ANDROID">
+  </div>
+</div>
+
+<blockquote>
+<p>YES! TOTAL CODE VICTORY!
+  <small>Commander Data as YOU</small></p>
+</blockquote>
+<p>The sad news is that you didn&apos;t write that code like an android and <strong>SPOILER ALERT</strong> you missed that pesky but kind of super critical closing bracket. Now the thousands of people relying on your project are getting fatal errors. They are not impressed. What should have been your finest hour, your finest expression of code art to the world is instead a shameful display of what the code elders call <em>n00batronix</em>. Might as well have climbed to the top of a big ole mountain and declared <em>&quot;I HAVE NO IDEA WHAT I AM DOING!!!&quot;</em> Certainly looks like you don&apos;t.</p>
+<p><strong>Done something like this before?</strong> Yeah, Me too.</p>
+<p>Luckily, there is an alternative to pretending you code like an android. It&apos;s called using the robots. By bending <a href="http://travis-ci.org">Travis</a>, <a href="http://nodejs.org">NodeJS</a> and <a href="http://gruntjs.com">Grunt</a> to your will you can make your code safe to distribute once again.</p>
+<p>Of course this is not the only reason to set up basic automatic code quality procedures. Preventing the total nuclear meltdown of your build is great but do you or your team also desire any of the following?</p>
+<ol>
+<li>Finding dev-killing missing parentheses in seconds, not <strong>hours</strong></li>
+<li>Getting rave reviews for how pro and clean your code looks</li>
+<li>Quenching Sally&apos;s rage because your <strong>TABS</strong> fetish wipes out her <strong>SPACES</strong>  on every commit</li>
+<li>Commiting diffs that are clean and unspoiled of non-essential dev drivel</li>
+<li>Developing good coding habits based on well defined standards.</li>
+</ol>
+<p>Interested in going from CodeZero to CodeHero in less than 30 minutes? Yes, you say? Then please read on.</p>
+<div class="text-center">
+  <img src="images/articles/linter-is-coming/anakin.gif" alt="anakin-wants-to-know" title="NOT FOR A JEDI!">
+</div>
+
+<p>Yes! Now that we are in 2016 it&apos;s relatively easy and straightforward to set up basic automated testing both to cover code-based nuclear meltdowns and to ensure your entire team is writing high quality code. If you are familiar with the basics of <a href="http://github.com">Github</a>, <a href="http://travis-ci.org">Travis</a>, <a href="http://nodejs.org">NodeJS</a> and <a href="http://gruntjs.com">Grunt</a> you can probably skip ahead to the next section. If not here are the essentials you need to get started:</p>
+<ol>
+<li>An open source NodeJS project on GitHub <a href="https://github.com/thinktandem/metalsmith-swig-helpers">like this</a></li>
+<li>A linked project on Travis CI <a href="https://travis-ci.org/thinktandem/metalsmith-swig-helpers">like this</a></li>
+</ol>
+<p>Generally, you will want to follow the <a href="https://guides.github.com/introduction/flow/">GitHub flow</a> development pattern. However, there is one major difference. When you commit code to your feature branch/pull request Travis will make sure your code is both neccesary and proper. If neither of the two aforementioned conditions are met you will get a visually obvious indication of this.</p>
+<div class="text-center">
+  <img src="images/articles/linter-is-coming/prfail.png" alt="pull-request-failed" title="ALL PULL REQUESTS MUST DIE">
+</div>
+
+<p>Travis will report what changes you need to make to your code. Fix those mistakes, push your code again, wait for the build to complete successfully and profit from having great code quality.</p>
+<p>See <a href="#tips-and-trickz">tips and tricks</a> below to learn how to setup GitHub and Travis.</p>
+<h2 id="ok-now-that-i-m-a-believer-give-me-an-example-">OK! Now that I&apos;m a believer give me an example.</h2>
+<p>We want to set up some basic checks on our new <a href="https://github.com/thinktandem/metalsmith-swig-helpers">metalsmith-swig-helpers</a> project to make sure the project does not have any fatal syntax errors and it conforms with some NodeJS code standards.</p>
+<p><strong>Let&apos;s begin!!!</strong></p>
+<h4 id="1-get-the-project">1. Get the project</h4>
+<div><pre class="language-bash"><code class="language-bash">
+<span class="token comment" spellcheck="true"># Clone the codes</span>
+<span class="token function">git</span> clone git@github.com:thinktandem/metalsmith-swig-helpers.git <span class="token operator">&amp;&amp;</span> \
+  <span class="token function">cd</span> metalsmith-swig-helpers
+
+<span class="token comment" spellcheck="true"># Install the deps</span>
+npm <span class="token function">install</span>
+</code></pre></div>
+
+<h4 id="2-install-grunt-and-the-needed-code-linting-and-styling-tasks">2. Install Grunt and the needed code linting and styling tasks</h4>
+<div><pre class="language-bash"><code class="language-bash">
+<span class="token comment" spellcheck="true"># Install the grunt-cli globally if you haven&apos;t already</span>
+npm <span class="token function">install</span> -g grunt-cli
+
+<span class="token comment" spellcheck="true"># Install the grunt tasks we need</span>
+npm <span class="token function">install</span> grunt --save-dev
+npm <span class="token function">install</span> grunt-contrib-jshint --save-dev
+npm <span class="token function">install</span> grunt-jscs --save-dev
+
+<span class="token comment" spellcheck="true"># Get some prettier output for linting</span>
+npm <span class="token function">install</span> jshint-stylish --save-dev
+
+<span class="token comment" spellcheck="true"># This helps us load grunt tasks</span>
+npm <span class="token function">install</span> matchdep --save-dev
+</code></pre></div>
+
+<p><strong>NOTE:</strong> Make sure you are setup to <a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions">install node modules globally without sudo</a>.</p>
+<h4 id="3-create-a-gruntfile-js-in-your-projects-root-directory-and-configure-it">3. Create a <code>Gruntfile.js</code> in your projects root directory and configure it</h4>
+<p>If you are unfamiliar with setting up the <code>Gruntfile</code> please check out <a href="http://gruntjs.com/getting-started#the-gruntfile">the documentation</a>.</p>
+<p>Here is a basic <code>Gruntfile.js</code> that does not do anything.</p>
+<div><pre class="language-javascript"><code class="language-javascript">
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>grunt<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment" spellcheck="true">// Load all grunt plugins</span>
+  <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;matchdep&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filterAll</span><span class="token punctuation">(</span><span class="token string">&apos;grunt-*&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>grunt<span class="token punctuation">.</span>loadNpmTasks<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// Create the Grunt configuration</span>
+  <span class="token keyword">var</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Load data from package.json</span>
+    pkg<span class="token punctuation">:</span> grunt<span class="token punctuation">.</span>file<span class="token punctuation">.</span><span class="token function">readJSON</span><span class="token punctuation">(</span><span class="token string">&apos;package.json&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// Initialize the configuration.</span>
+  grunt<span class="token punctuation">.</span><span class="token function">initConfig</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// Register tasks</span>
+  grunt<span class="token punctuation">.</span><span class="token function">registerTask</span><span class="token punctuation">(</span><span class="token string">&apos;default&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div>
+
+<p>Here is a <code>Gruntfile.js</code> task that checks your code for syntax errors. Please refer to the documentation on the <a href="https://github.com/gruntjs/grunt-contrib-jshint"><code>grunt-contrib-jshint</code></a> plugin. Notice that we are delegating our linting rules to the <code>.jshintrc</code> file. You can read more about the rules of this file <a href="http://jshint.com/docs/options/">here</a>.</p>
+<div><pre class="language-yaml"><code class="language-yaml">
+<span class="token key atrule">jshint</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  <span class="token key atrule">options</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true"># Use a config file for our linting rules</span>
+    <span class="token key atrule">jshintrc</span><span class="token punctuation">:</span> <span class="token string">&apos;.jshintrc&apos;</span><span class="token punctuation">,</span>
+
+    <span class="token comment" spellcheck="true"># Use a custom reporter so we get pretty output for lint reports</span>
+    <span class="token key atrule">reporter</span><span class="token punctuation">:</span> require(&apos;jshint<span class="token punctuation">-</span>stylish&apos;)
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  // This uses normal GLOB syntax. In this case scanning all JS files in ./ and lib/
+  <span class="token key atrule">files</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&apos;*.js&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;lib/*.js&apos;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div>
+
+<p>Here is a <code>Gruntfile.js</code> task that makes sure we are following NodeJS coding standards. Please refer to the documentation on the <a href="https://github.com/jscs-dev/grunt-jscs"><code>grunt-jscs</code></a> plugin. Notice that we are delegating our linting rules to the <code>.jscsrc</code> file. You can read more about the rules of this file <a href="http://jscs.info/overview">here</a>.</p>
+<div><pre class="language-yaml"><code class="language-yaml">
+<span class="token key atrule">jscs</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+
+  <span class="token comment" spellcheck="true"># Use a config file for our code standards config</span>
+  <span class="token key atrule">options</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token key atrule">config</span><span class="token punctuation">:</span> <span class="token string">&apos;.jscsrc&apos;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true"># This uses normal GLOB syntax. In this case scanning all JS files in ./ and lib/</span>
+  <span class="token key atrule">files</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&apos;*.js&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;lib/*.js&apos;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div>
+
+<p>Here is a complete <code>Gruntfile.js</code> that defines checks for basic syntax errors and adherence to code standards laid out in <code>jscsrc</code> (Google standards in this case). We also register a task called <code>grunt test</code> that will check these things.</p>
+<div><pre class="language-javascript"><code class="language-javascript">
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>grunt<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment" spellcheck="true">// Load all grunt plugins</span>
+  <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;matchdep&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filterAll</span><span class="token punctuation">(</span><span class="token string">&apos;grunt-*&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>grunt<span class="token punctuation">.</span>loadNpmTasks<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// Create the Grunt configuration</span>
+  <span class="token keyword">var</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">// Load data from package.json</span>
+    pkg<span class="token punctuation">:</span> grunt<span class="token punctuation">.</span>file<span class="token punctuation">.</span><span class="token function">readJSON</span><span class="token punctuation">(</span><span class="token string">&apos;package.json&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+    <span class="token comment" spellcheck="true">// Lint relevent files based on .jshintrc</span>
+    jshint<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        jshintrc<span class="token punctuation">:</span> <span class="token string">&apos;.jshintrc&apos;</span><span class="token punctuation">,</span>
+        reporter<span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;jshint-stylish&apos;</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      files<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&apos;*.js&apos;</span><span class="token punctuation">,</span>
+        <span class="token string">&apos;lib/*.js&apos;</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment" spellcheck="true">// Enforce code standards found in .jscsrc</span>
+    jscs<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        config<span class="token punctuation">:</span> <span class="token string">&apos;.jscsrc&apos;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      files<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&apos;*.js&apos;</span><span class="token punctuation">,</span>
+        <span class="token string">&apos;lib/*.js&apos;</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// Initialize the configuration.</span>
+  grunt<span class="token punctuation">.</span><span class="token function">initConfig</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// Register tasks</span>
+  grunt<span class="token punctuation">.</span><span class="token function">registerTask</span><span class="token punctuation">(</span><span class="token string">&apos;default&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  grunt<span class="token punctuation">.</span><span class="token function">registerTask</span><span class="token punctuation">(</span><span class="token string">&apos;test&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">&apos;jshint&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;jscs&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div>
+
+<p>Now you should be able to run the linting and standards enforcement locally with <code>grunt test</code>.</p>
+<div><pre class="language-bash"><code class="language-bash">
+grunt <span class="token function">test</span>
+Running <span class="token string">&quot;jshint:files&quot;</span> <span class="token punctuation">(</span>jshint<span class="token punctuation">)</span> task
+
+&#x2714; No problems
+
+Running <span class="token string">&quot;jscs:files&quot;</span> <span class="token punctuation">(</span>jscs<span class="token punctuation">)</span> task
+disallowMultipleVarDecl: Multiple var declaration at lib/index.js <span class="token keyword">:</span>
+     5 <span class="token operator">|</span><span class="token string">&apos;use strict&apos;</span><span class="token punctuation">;</span>
+     6 <span class="token operator">|</span>
+     7 <span class="token operator">|</span>var swig <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">&quot;swig&quot;</span><span class="token punctuation">)</span>,
+--------^
+     8 <span class="token operator">|</span>    _str <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">&quot;underscore.string&quot;</span><span class="token punctuation">)</span>,
+     9 <span class="token operator">|</span>    debug <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">&quot;debug&quot;</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">&quot;metalsmith-swig-helpers&quot;</span><span class="token punctuation">)</span>,
+validateQuoteMarks: Invalid quote mark found at lib/index.js <span class="token keyword">:</span>
+     5 <span class="token operator">|</span><span class="token string">&apos;use strict&apos;</span><span class="token punctuation">;</span>
+     6 <span class="token operator">|</span>
+     7 <span class="token operator">|</span>var swig <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">&quot;swig&quot;</span><span class="token punctuation">)</span>,
+---------------------------^
+     8 <span class="token operator">|</span>    _str <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">&quot;underscore.string&quot;</span><span class="token punctuation">)</span>,
+     9 <span class="token operator">|</span>    debug <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">&quot;debug&quot;</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">&quot;metalsmith-swig-helpers&quot;</span><span class="token punctuation">)</span>,
+validateQuoteMarks: Invalid quote mark found at lib/index.js <span class="token keyword">:</span>
+
+    <span class="token comment" spellcheck="true"># And so on and so forth...</span>
+
+    86 <span class="token operator">|</span>           // randomly choose an element from the array
+    87 <span class="token operator">|</span>           var index <span class="token operator">=</span> <span class="token punctuation">[</span>Math.floor<span class="token punctuation">(</span>Math.random<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span>em<span class="token operator">&gt;</span> input.length<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+validateIndentation: Expected indentation of 10 characters at lib/index.js <span class="token keyword">:</span>
+    84 <span class="token operator">|</span>             <span class="token keyword">return</span> input<span class="token punctuation">;</span>
+    85 <span class="token operator">|</span>           <span class="token punctuation">}</span>
+    86 <span class="token operator">|</span>           // randomly choose an element from the array
+--------^
+    87 <span class="token operator">|</span>           var index <span class="token operator">=</span> <span class="token punctuation">[</span>Math.floor<span class="token punctuation">(</span>Math.random<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span>/em<span class="token operator">&gt;</span> input.length<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    88 <span class="token operator">|</span>           <span class="token keyword">return</span> input<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token operator">&gt;&gt;</span> 50 code style errors found<span class="token operator">!</span>
+
+Warning: Task <span class="token string">&quot;jscs:files&quot;</span> failed. Use --force to continue.
+
+Aborted due to warnings.
+</code></pre></div>
+
+<p>Obey the suggestions in the run output to achieve code cleanliness.</p>
+<h4 id="4-automate-the-testing-with-a-travis-yml-file-">4. Automate the testing with a <code>travis.yml</code> file.</h4>
+<p>Here is a basic <code>.travis.yml</code> file that you can drop in your projects root directory. This will automate the testing of your code. If you are interested in learning more about configuring this file you should check out the <a href="https://docs.travis-ci.com/user/getting-started/">Travis Starter Guide</a>.</p>
+<div><pre class="language-yaml"><code class="language-yaml">
+<span class="token key atrule">language</span><span class="token punctuation">:</span> node_js
+<span class="token key atrule">node_js</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> <span class="token string">&apos;4&apos;</span>
+<span class="token key atrule">sudo</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">script</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> grunt test
+<span class="token key atrule">cache</span><span class="token punctuation">:</span>
+  <span class="token key atrule">directories</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> node_modules
+  <span class="token punctuation">-</span> assets/vendor
+<span class="token key atrule">notifications</span><span class="token punctuation">:</span>
+  <span class="token key atrule">email</span><span class="token punctuation">:</span> dukat@freebajor.org
+</code></pre></div>
+
+<h4 id="5-push-your-code-fix-your-errors-and-profit">5. Push your code, fix your errors and profit</h4>
+<div><pre class="language-bash"><code class="language-bash">
+<span class="token comment" spellcheck="true"># Commit and push code that fails grunt test</span>
+<span class="token function">git</span> add <span class="token keyword">.</span>
+<span class="token function">git</span> commit -m <span class="token string">&quot;LINTER IS COMING&quot;</span>
+<span class="token function">git</span> push origin nuclearLinter
+</code></pre></div>
+
+<p>Here is a closed pull request that goes from a failed build to happy.
+<a href="https://github.com/thinktandem/metalsmith-swig-helpers/pull/1">https://github.com/thinktandem/metalsmith-swig-helpers/pull/1</a></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Take 15-30 minutes to set up basic linting and code standards enforcement and save time and money in the long term!</p>
+<h3 id="tips-trickz-and-references">Tips, Trickz and References</h3>
+<ul>
+<li>If you have a private GitHub repo you will want to set up Travis on their paid-for service <a href="http://travis-ci.com">travis-ci.com</a></li>
+<li><a href="https://github.com/mbonaci/mbo-storm/wiki/Integrate-Travis-CI-with-your-GitHub-repo">Here</a> are some instructions on settings up Travis in general.</li>
+<li>Most of the above also works using <a href="http://gulpjs.com">Gulp</a></li>
+<li>You can check out the code we used for this article over <a href="https://github.com/thinktandem/metalsmith-swig-helpers">here</a></li>
+</ul>
+
+      </div>
+    </div>
+
+    <div id="email-subscribe">
+      <div class="container text-center">
+        <a href="http://eepurl.com/caz4hn">
+          <i class="fa fa-envelope"></i>
+          Click here to get instant notifications on all our most recent posts
+          <i class="fa fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+  </article>
+
+  <div id="recent-posts">
+  <div class="container">
+    <div class="row header text-center">
+      <h3>Read some other awesome Tandem adventures</h3>
+    </div>
+    
+      <div class="col-md-4">
+        <div class="recent">
+
+          <div class="title">
+            <a href="blog/2016/09/29/how-my-agency-uses-kalabox-to-win-all-the-local">How My Agency uses Kalabox to Win all the Local</a>
+          </div>
+
+          <div class="author">
+            <img src="images/authors/teaser/brian-gonzales.jpg" class="avatar" alt="author" />Brian Gonzales, September 29th 2016
+          </div>
+
+          <p class="intro">
+            Onboarding new team members to your web project can be complicated with even the most integrated DevOps team. Say hello to Kalabox.
+          </p>
+
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="recent">
+
+          <div class="title">
+            <a href="blog/2016/09/25/save-prod-peers-linting-and-styles-for-node-on-travis">Save Prod &amp; Peers: Linting and Styles for Node on Travis</a>
+          </div>
+
+          <div class="author">
+            <img src="images/authors/teaser/mike-pirog.jpg" class="avatar" alt="author" />Mike Pirog, September 25th 2016
+          </div>
+
+          <p class="intro">
+            Don&#39;t be the person that breaks production because of a typo or searches endlessly for that missing closing bracket. Level up with Travis, grunt and node.
+          </p>
+
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="recent">
+
+          <div class="title">
+            <a href="blog/2016/09/23/node-microservices-on-docker-cloud">Node Microservices on Docker Cloud</a>
+          </div>
+
+          <div class="author">
+            <img src="images/authors/teaser/alec-reynolds.jpg" class="avatar" alt="author" />Alec Reynolds, September 23rd 2016
+          </div>
+
+          <p class="intro">
+            How to run small NodeJS in an efficient, inexpensive, and scalable manner using Docker Cloud.
+          </p>
+
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div id="cta">
+  <div class="container social">
+    <div class="row header text-center">
+      <h3>Ready to take it to the next level?</h3>
+      <a href="/contact" title="contact" class="btn btn-primary" role="button">
+        Get a free consultation
+      </a>
+    </div>
+  </div>
+</div>
+
+  <div id="social">
+  <div class="container social">
+    <div class="row header text-center">
+      <h3>Engage with all the socials.</h3>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 icons text-center">
+        
+          <a href="http://eepurl.com/caz4hn" title="Newsletter">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        
+          <a href="https://twitter.com/thinktandem" title="Twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        
+          <a href="https://github.com/thinktandem" title="Github">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        
+          <a href="https://www.linkedin.com/company/kalabox" title="LinkedIn">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+
+  
+    
+    <footer class="footer">
+  <div id="footer">
+    <div class="credits">
+      <div class="row">
+        <div class="col-md-12">
+          Copyright © 2016 by Kalabox, Inc. DBA Tandem.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+  
+  
+
+  
+    <script src="js/scripts.js?1475200271537"></script>
+    <script src="vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js?1475200271537"></script>
+    
+    <script type="application/ld+json">
+      [{"@context":"http://schema.org","@type":"WebSite","name":"Tandem","alternateName":"The site for Tandem, a software strategy firm.","url":"http://www.thinktandem.io"},{"@context":"http://schema.org","@type":"Organization","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Save Prod & Peers: Linting and Styles for Node on Travis","alternativeHeadline":"Don't be the person that breaks production because of a typo or searches endlessly for that missing closing bracket. Level up with Travis, grunt and node.","image":"images/articles/linter-is-coming/linteriscoming.jpeg","keywords":["deployment","localdev","strategy","support","testing"],"publisher":{"@context":"http://schema.org","@type":"Organization","name":"Kalabox Inc. DBA Tandem","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]},"datePublished":"2016-09-25T00:00:00.000Z","dateCreated":"2016-09-25T00:00:00.000Z","description":"Don't be the person that breaks production because of a typo or searches endlessly for that missing closing bracket. Level up with Travis, grunt and node.","author":{"@type":"Person","name":"author"}}]
+    </script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-74237404-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  
+
+</body>
+</html>
