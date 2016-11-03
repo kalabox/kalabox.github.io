@@ -518,25 +518,25 @@ p {
   }
 }
 
-input[type="email"].form-control {
+input[type="text"].form-control {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-input[type="email"].form-control::-webkit-input-placeholder {
+input[type="text"].form-control::-webkit-input-placeholder {
   font-weight: 300;
 }
 
-input[type="email"].form-control:-moz-placeholder {
+input[type="text"].form-control:-moz-placeholder {
   font-weight: 300;
 }
 
-input[type="email"].form-control::-moz-placeholder {
+input[type="text"].form-control::-moz-placeholder {
   font-weight: 300;
 }
 
-input[type="email"].form-control:-ms-input-placeholder {
+input[type="text"].form-control:-ms-input-placeholder {
   font-weight: 300;
 }
 
@@ -690,7 +690,7 @@ body {
 <body class="contact">
   <noscript id="deferred-styles">
     
-      <link rel="stylesheet" type="text/css" href="styles/main.css?1475276964671">
+      <link rel="stylesheet" type="text/css" href="styles/main.css?1478206584961">
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic">
     
   </noscript>
@@ -787,7 +787,7 @@ body {
                 </div>
                 <div class="form-group">
                   <label for="email">Email address</label>
-                  <input name="_replyto" type="email" class="form-control" id="email" placeholder="Enter email" required>
+                  <input type="text" name="email" class="form-control" placeholder="Your email" required />
                 </div>
                 <div class="form-group">
                   <label for="phone">Phone</label>
@@ -798,6 +798,7 @@ body {
                   <textarea name="message" id="message" class="form-control" rows="3" required></textarea>
                 </div>
                 <input type="hidden" name="_next" value="contact-thanks" />
+                <input type="hidden" name="_subject" value="Tandem Contact Request" />
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>
@@ -882,8 +883,8 @@ body {
   
 
   
-    <script src="js/scripts.js?1475276964678"></script>
-    <script src="vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js?1475276964678"></script>
+    <script src="js/scripts.js?1478206584965"></script>
+    <script src="vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js?1478206584965"></script>
     
     <script type="application/ld+json">
       [{"@context":"http://schema.org","@type":"WebSite","name":"Tandem","alternateName":"The site for Tandem, a software strategy firm.","url":"http://www.thinktandem.io"},{"@context":"http://schema.org","@type":"Organization","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]}]

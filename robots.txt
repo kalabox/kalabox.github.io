@@ -10,6 +10,6 @@ Disallow: services/local/index.html
 Disallow: services/modernize/index.html
 Disallow: services/testing/index.html
 Disallow: services/training/index.html
-Disallow: staff/pirog/index.html
 Disallow: staff/reynolds/index.html
+Disallow: staff/pirog/index.html
 Sitemap: http://www.thinktandem.io/sitemap.xml
