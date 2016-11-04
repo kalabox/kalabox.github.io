@@ -5,8 +5,8 @@ Disallow: blog/2016/09/10/let-s-get-small-introduction-to-microservices/index.ht
 Disallow: blog/2016/09/23/node-microservices-on-docker-cloud/index.html
 Disallow: quotes/chesney/index.html
 Disallow: quotes/koenig/index.html
-Disallow: services/hosting/index.html
 Disallow: services/local/index.html
+Disallow: services/hosting/index.html
 Disallow: services/modernize/index.html
 Disallow: services/testing/index.html
 Disallow: services/training/index.html
