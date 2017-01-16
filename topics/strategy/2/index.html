@@ -51,6 +51,7 @@ body {
   margin: 0;
 }
 
+article,
 header,
 main,
 nav {
@@ -59,6 +60,10 @@ nav {
 
 a {
   background-color: transparent;
+}
+
+strong {
+  font-weight: bold;
 }
 
 h1 {
@@ -135,6 +140,12 @@ a {
 
 img {
   vertical-align: middle;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -220,8 +231,6 @@ ul {
   clear: both;
 }
 
-.col-md-2,
-.col-md-10,
 .col-md-12 {
   position: relative;
   min-height: 1px;
@@ -230,18 +239,8 @@ ul {
 }
 
 @media (min-width: 992px) {
-  .col-md-2,
-  .col-md-10,
   .col-md-12 {
     float: left;
-  }
-
-  .col-md-2 {
-    width: 16.66667%;
-  }
-
-  .col-md-10 {
-    width: 83.33333%;
   }
 
   .col-md-12 {
@@ -424,23 +423,6 @@ ul {
   }
 }
 
-.label {
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
-}
-
-.label-primary {
-  background-color: #4BB5DD;
-}
-
 @-ms-viewport {
   width: device-width;
 }
@@ -472,112 +454,65 @@ p {
   }
 }
 
-.teaser .post {
-  margin-bottom: 90px;
+#article .blog-main-image {
+  margin: auto;
+  max-height: 14em;
 }
 
-.teaser .post .title {
-  font-family: "Lato", "Helvetica Neue", Arial;
-  font-size: 2em;
-  font-weight: 300;
-  color: #333;
-  line-height: 50px;
+#article p {
+  color: #5d6d77;
+  font-size: 0.95em;
+  margin: 1em 0;
+  line-height: 1.8;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
-@media (max-width: 991px) {
-  .teaser .post .title {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .teaser .post .title {
-    font-size: 1.4em;
-  }
-}
-
-.teaser .post .title a {
-  color: #111;
-}
-
-.teaser .post .author {
-  color: #888;
-  margin-top: 4px;
-  position: relative;
-}
-
-@media (max-width: 991px) {
-  .teaser .post .author {
-    text-align: center;
-  }
-}
-
-.teaser .post .author .avatar {
-  max-width: 100%;
+#article .avatar {
+  max-width: 25px;
   border-radius: 100%;
   border: 1px solid #e0e0e0;
 }
 
-@media (max-width: 991px) {
-  .teaser .post .author .avatar {
-    margin-bottom: 50px;
-    line-height: 50px;
-    max-width: 50%;
-  }
-}
-
-.teaser .post .intro {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  margin-top: 18px;
-  font-size: 20px;
-  line-height: 27px;
-  color: #4d4d4d;
-}
-
-@media (min-width: 992px) {
-  .teaser .post .intro {
-    width: 90%;
-  }
-}
-
-.teaser .post .continue-reading {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 15px;
-  display: inline-block;
-  margin-top: 8px;
-}
-
-#tags .container {
-  padding-bottom: 2em;
-  padding-top: 2em;
-}
-
-#tags .label {
-  background: #FF8E79;
-  color: #FFFFFF;
-  padding: 10px;
-  margin: 5px;
-  display: inline-block;
-}
-
-#tags .label a {
-  color: #FFFFFF;
-}
-
-#info .container {
+#article #page-content .container {
   border-bottom: 1px solid #efefef;
   padding-bottom: 50px;
   padding-top: 50px;
 }
 
-#posts {
-  -webkit-font-smoothing: antialiased;
-  margin-top: 55px;
+#article #main-pic .container {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+#article img {
+  max-width: 100%;
 }
 
 body {
   font-size: 22px;
+}
+
+#header-title h1 {
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #555555;
+  margin-top: 31px;
+  margin-bottom: 15.5px;
+}
+
+@media (max-width: 991px) {
+  #header-title h1 {
+    line-height: 50px;
+  }
+}
+
+#header-title .container {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .navbar .icon-bar {
@@ -631,10 +566,6 @@ body {
   color: #333;
 }
 
-.container.border-bottom {
-  border-bottom: 1px solid #efefef;
-}
-
     </style>
   
 
@@ -643,7 +574,7 @@ body {
 <body class="">
   <noscript id="deferred-styles">
     
-      <link rel="stylesheet" type="text/css" href="styles/main.css?1483378964238">
+      <link rel="stylesheet" type="text/css" href="styles/main.css?1484607764519">
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic">
     
   </noscript>
@@ -688,6 +619,13 @@ body {
         <li class="services">
       
         <a href="services">Services</a>
+      </li>
+    
+      
+      
+        <li class="training">
+      
+        <a href="trainings">Training</a>
       </li>
     
       
@@ -869,7 +807,7 @@ body {
   
 
   
-    <script src="js/scripts.js?1483378964244"></script>
+    <script src="js/scripts.js?1484607764525"></script>
     
     <script type="application/ld+json">
       [{"@context":"http://schema.org","@type":"WebSite","name":"Tandem","alternateName":"The site for Tandem, a software strategy firm.","url":"http://www.thinktandem.io"},{"@context":"http://schema.org","@type":"Organization","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]}]

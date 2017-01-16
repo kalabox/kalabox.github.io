@@ -18,12 +18,12 @@
     <![endif]-->
 
   <title>
-    Tandem | 
+    Tandem | Trainings
   </title>
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="http://www.thinktandem.io/topics/testing/index.html/" />
-  <meta property="og:url" content="http://www.thinktandem.io/topics/testing/index.html/" />
-  <meta property="og:title" content="" />
+  <link rel="canonical" href="http://www.thinktandem.io/trainings/" />
+  <meta property="og:url" content="http://www.thinktandem.io/trainings/" />
+  <meta property="og:title" content="Trainings" />
   
   <meta property="og:type" content="website" />
   
@@ -38,8 +38,11 @@
   
 
   
-    <style>
-      @charset "UTF-8";
+    
+    
+      
+      <style>
+        @charset "UTF-8";
 
 html {
   font-family: sans-serif;
@@ -51,7 +54,6 @@ body {
   margin: 0;
 }
 
-article,
 header,
 main,
 nav {
@@ -62,10 +64,6 @@ a {
   background-color: transparent;
 }
 
-strong {
-  font-weight: bold;
-}
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -73,10 +71,6 @@ h1 {
 
 small {
   font-size: 80%;
-}
-
-img {
-  border: 0;
 }
 
 button {
@@ -99,6 +93,15 @@ button {
 
 button::-moz-focus-inner {
   border: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
   padding: 0;
 }
 
@@ -138,24 +141,16 @@ a {
   text-decoration: none;
 }
 
-img {
-  vertical-align: middle;
-}
-
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-h1 {
+h1,
+h2 {
   font-family: inherit;
   font-weight: 300;
   line-height: 1.1;
   color: #555555;
 }
 
-h1 {
+h1,
+h2 {
   margin-top: 31px;
   margin-bottom: 15.5px;
 }
@@ -164,8 +159,8 @@ h1 {
   font-size: 57px;
 }
 
-p {
-  margin: 0 0 15.5px;
+h2 {
+  font-size: 2em;
 }
 
 small {
@@ -231,21 +226,41 @@ ul {
   clear: both;
 }
 
-.col-md-12 {
+.col-xs-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media (min-width: 992px) {
-  .col-md-12 {
-    float: left;
-  }
+.col-xs-12 {
+  float: left;
+}
 
-  .col-md-12 {
-    width: 100%;
-  }
+.col-xs-12 {
+  width: 100%;
+}
+
+table {
+  background-color: transparent;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 31px;
+}
+
+.table > thead > tr > td,
+.table > tbody > tr > td {
+  padding: 8px;
+  line-height: 1.42857;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
 }
 
 .collapse {
@@ -437,57 +452,12 @@ a {
   color: #459CE7;
 }
 
-p {
-  color: #777777;
-  font-size: 1em;
-  margin-top: 1em;
-  line-height: 1.3em;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-}
-
 @media (min-width: 768px) {
   .navbar-nav > li {
     display: inline-block;
     vertical-align: middle;
     float: none;
   }
-}
-
-#article .blog-main-image {
-  margin: auto;
-  max-height: 14em;
-}
-
-#article p {
-  color: #5d6d77;
-  font-size: 0.95em;
-  margin: 1em 0;
-  line-height: 1.8;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-}
-
-#article .avatar {
-  max-width: 25px;
-  border-radius: 100%;
-  border: 1px solid #e0e0e0;
-}
-
-#article #page-content .container {
-  border-bottom: 1px solid #efefef;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-#article #main-pic .container {
-  border-bottom: 1px solid #efefef;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-#article img {
-  max-width: 100%;
 }
 
 body {
@@ -566,15 +536,16 @@ body {
   color: #333;
 }
 
-    </style>
+      </style>
+    
   
 
 </head>
 
-<body class="">
+<body class="trainings">
   <noscript id="deferred-styles">
     
-      <link rel="stylesheet" type="text/css" href="styles/main.css?1484607764581">
+      <link rel="stylesheet" type="text/css" href="styles/main.css?1484607764343">
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic">
     
   </noscript>
@@ -657,186 +628,75 @@ body {
     
   
 
-  <div id="info">
-    <div class="container">
-      <div class="row header">
-        <div class="col-md-12 text-center">
-          <h1>Posts about testing</h1>
-          <small>We've been revealing truth since the Permian extinction. <a href="http://eepurl.com/caz4hn">Sign up</a> to receieve an email whenever we post something in the blog and never miss an update.
-        </div>
-      </div>
-    </div>
-  </div>
+  <div id="training">
 
-  <div id="tags">
-  <div class="container border-bottom">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        
-          <span class="label label-primary"><a href="/topics/deployment" title="deployment">deployment</a></span>
-        
-          <span class="label label-primary"><a href="/topics/docker" title="docker">docker</a></span>
-        
-          <span class="label label-primary"><a href="/topics/hosting" title="hosting">hosting</a></span>
-        
-          <span class="label label-primary"><a href="/topics/localdev" title="localdev">localdev</a></span>
-        
-          <span class="label label-primary"><a href="/topics/misc" title="misc">misc</a></span>
-        
-          <span class="label label-primary"><a href="/topics/scaling" title="scaling">scaling</a></span>
-        
-          <span class="label label-primary"><a href="/topics/strategy" title="strategy">strategy</a></span>
-        
-          <span class="label label-primary"><a href="/topics/support" title="support">support</a></span>
-        
-          <span class="label label-primary"><a href="/topics/training" title="training">training</a></span>
-        
-          <span class="label label-primary"><a href="/topics/testing" title="testing">testing</a></span>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  <div id="posts">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          
-            <div class="teaser">
-  <div class="row post">
-    <div class="col-md-2">
-      <div class="author">
-        <img src="images/authors/teaser/mike-pirog.jpg" class="avatar" alt="author" />
-      </div>
-    </div>
-    <div class="col-md-10">
-
-      <div class="title">
-        <a href="blog/2016/11/08/goodbye-virtualbox-kalabox-2-1-1">Goodbye VirtualBox: Kalabox 2.1.1</a>
-      </div>
-
-      <div class="author">
-        Mike Pirog, November 8th 2016
-      </div>
-
-      <p class="intro">
-        With our newest version of Kalabox, we say goodbye to VirtualBox and hello to better performance and stability with Docker for Mac and Windows.
-      </p>
-
-      <a href="blog/2016/11/08/goodbye-virtualbox-kalabox-2-1-1" class="continue-reading">Continue reading this post</a>
-
-    </div>
-  </div>
-</div>
-
-          
-            <div class="teaser">
-  <div class="row post">
-    <div class="col-md-2">
-      <div class="author">
-        <img src="images/authors/teaser/brian-gonzales.jpg" class="avatar" alt="author" />
-      </div>
-    </div>
-    <div class="col-md-10">
-
-      <div class="title">
-        <a href="blog/2016/09/29/how-my-agency-uses-kalabox-to-win-all-the-local">How My Agency uses Kalabox to Win all the Local</a>
-      </div>
-
-      <div class="author">
-        Brian Gonzales, September 29th 2016
-      </div>
-
-      <p class="intro">
-        Onboarding new team members to your web project can be complicated with even the most integrated DevOps team. Say hello to Kalabox.
-      </p>
-
-      <a href="blog/2016/09/29/how-my-agency-uses-kalabox-to-win-all-the-local" class="continue-reading">Continue reading this post</a>
-
-    </div>
-  </div>
-</div>
-
-          
-            <div class="teaser">
-  <div class="row post">
-    <div class="col-md-2">
-      <div class="author">
-        <img src="images/authors/teaser/mike-pirog.jpg" class="avatar" alt="author" />
-      </div>
-    </div>
-    <div class="col-md-10">
-
-      <div class="title">
-        <a href="blog/2016/09/25/save-prod-peers-linting-and-styles-for-node-on-travis">Save Prod &amp; Peers: Linting and Styles for Node on Travis</a>
-      </div>
-
-      <div class="author">
-        Mike Pirog, September 25th 2016
-      </div>
-
-      <p class="intro">
-        Don&#39;t be the person that breaks production because of a typo or searches endlessly for that missing closing bracket. Level up with Travis, grunt and node.
-      </p>
-
-      <a href="blog/2016/09/25/save-prod-peers-linting-and-styles-for-node-on-travis" class="continue-reading">Continue reading this post</a>
-
-    </div>
-  </div>
-</div>
-
-          
-            <div class="teaser">
-  <div class="row post">
-    <div class="col-md-2">
-      <div class="author">
-        <img src="images/authors/teaser/alec-reynolds.jpg" class="avatar" alt="author" />
-      </div>
-    </div>
-    <div class="col-md-10">
-
-      <div class="title">
-        <a href="blog/2016/09/20/rejoice-kalabox-2-0-released">Rejoice: Kalabox 2.0 Released</a>
-      </div>
-
-      <div class="author">
-        Alec Reynolds, September 20th 2016
-      </div>
-
-      <p class="intro">
-        Proudly announcing the release of Kalabox 2.0, our open-source Docker-powered local development tool that provides the fastest way to develop WordPress and Drupal applications.
-      </p>
-
-      <a href="blog/2016/09/20/rejoice-kalabox-2-0-released" class="continue-reading">Continue reading this post</a>
-
-    </div>
-  </div>
-</div>
-
-          
-          <div class="pages">
-            <ul class="pagination">
-              
-              
-            </ul>
+    <div id="header-title">
+      <div class="container">
+        <div class="row header">
+          <div class="col-xs-12 text-center">
+            <h1>Trainings</h1>
+            <small>Technology moves fast, but business cycles move faster. Help your team keep up with both by taking advantage of our trainings. We conduct trainings on Docker, continuous integration, Kalabox, modern PHP, TravisCI, API construction, microservices architecture, and many more topics.</small>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <h2>Upcoming Training Courses</h2>
+        
+        <table class="table">
+          <thead>
+            <tr>
+              <td>Course</td>
+              <td>Date</td>
+              <td>Location</td>
+              <td>Cost</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td><a href="trainings/continuous-integration-san-diego">Continuous Integration</a></td>
+                <td>February 15th 2017</td>
+                <td>San Diego, CA</td>
+                <td>$50</td>
+                <td>
+                  
+                    <a href="trainings/continuous-integration-san-diego">Sign Up</a>
+                  
+                </td>
+              </tr>
+            
+          </tbody>
+        </table>
+        
+    </div>
   </div>
 
-  <div id="cta">
-  <div class="container social">
+  <div class="container">
+    <h2>Private Training</h2>
+    <div>
+      We offer private trainings at your place of business. Before every private training, we conduct a kickoff to assess your needs and tailor the training accordingly. Here are a few trainings we've offered in the past:
+    </div>
+    <ul>
+      <li>Establishing Code Transparency with Git</li>
+      <li>Creating a Continuous Integration Pipeline</li>
+      <li>Continuous Integration with TravisCI</li>
+      <li>Docker and Kalabox for Local Development</li>
+      <li>Agile Development Workflows</li>
+    </ul>
+  </div>
+
+  <div class="container training-cta">
     <div class="row header text-center">
       <h3>Ready to take it to the next level?</h3>
       <a href="/contact" title="contact" class="btn btn-primary" role="button">
-        Get a free consultation
+        Talk to Us About Private Trainings
       </a>
     </div>
   </div>
-</div>
+
 
   <div id="social">
   <div class="container social">
@@ -891,7 +751,7 @@ body {
   
 
   
-    <script src="js/scripts.js?1484607764589"></script>
+    <script src="js/scripts.js?1484607764348"></script>
     
     <script type="application/ld+json">
       [{"@context":"http://schema.org","@type":"WebSite","name":"Tandem","alternateName":"The site for Tandem, a software strategy firm.","url":"http://www.thinktandem.io"},{"@context":"http://schema.org","@type":"Organization","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]}]
