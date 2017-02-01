@@ -54,9 +54,8 @@ body {
   margin: 0;
 }
 
-header,
 main,
-nav {
+section {
   display: block;
 }
 
@@ -67,37 +66,6 @@ a {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-
-small {
-  font-size: 80%;
-}
-
-img {
-  border: 0;
-}
-
-button {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-}
-
-button {
-  overflow: visible;
-}
-
-button {
-  text-transform: none;
-}
-
-button {
-  -webkit-appearance: button;
-}
-
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
 }
 
 * {
@@ -125,29 +93,9 @@ body {
   background-color: #fff;
 }
 
-button {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-
 a {
   color: #4BB5DD;
   text-decoration: none;
-}
-
-img {
-  vertical-align: middle;
-}
-
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.img-circle {
-  border-radius: 50%;
 }
 
 h1 {
@@ -170,54 +118,6 @@ p {
   margin: 0 0 15.5px;
 }
 
-small {
-  font-size: 86%;
-}
-
-.text-center {
-  text-align: center;
-}
-
-ul {
-  margin-top: 0;
-  margin-bottom: 15.5px;
-}
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container:before,
-.container:after {
-  content: " ";
-  display: table;
-}
-
-.container:after {
-  clear: both;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
 .row {
   margin-left: -15px;
   margin-right: -15px;
@@ -233,218 +133,53 @@ ul {
   clear: both;
 }
 
-.col-md-6,
-.col-md-12 {
+.col-sm-3,
+.col-sm-9 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media (min-width: 992px) {
-  .col-md-6,
-  .col-md-12 {
+@media (min-width: 768px) {
+  .col-sm-3,
+  .col-sm-9 {
     float: left;
   }
 
-  .col-md-6 {
-    width: 50%;
+  .col-sm-3 {
+    width: 25%;
   }
 
-  .col-md-12 {
-    width: 100%;
+  .col-sm-9 {
+    width: 75%;
   }
 }
 
-.collapse {
-  display: none;
-}
-
-.nav {
+.btn {
+  display: inline-block;
   margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.nav:before,
-.nav:after {
-  content: " ";
-  display: table;
-}
-
-.nav:after {
-  clear: both;
-}
-
-.nav > li {
-  position: relative;
-  display: block;
-}
-
-.nav > li > a {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-}
-
-.navbar {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 31px;
-  border: 1px solid transparent;
-}
-
-.navbar:before,
-.navbar:after {
-  content: " ";
-  display: table;
-}
-
-.navbar:after {
-  clear: both;
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    border-radius: 4px;
-  }
-}
-
-.navbar-header:before,
-.navbar-header:after {
-  content: " ";
-  display: table;
-}
-
-.navbar-header:after {
-  clear: both;
-}
-
-@media (min-width: 768px) {
-  .navbar-header {
-    float: left;
-  }
-}
-
-.navbar-collapse {
-  overflow-x: visible;
-  padding-right: 15px;
-  padding-left: 15px;
-  border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  -webkit-overflow-scrolling: touch;
-}
-
-.navbar-collapse:before,
-.navbar-collapse:after {
-  content: " ";
-  display: table;
-}
-
-.navbar-collapse:after {
-  clear: both;
-}
-
-@media (min-width: 768px) {
-  .navbar-collapse {
-    width: auto;
-    border-top: 0;
-    box-shadow: none;
-  }
-
-  .navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-  }
-}
-
-.navbar-brand {
-  float: left;
-  padding: 9.5px 15px;
-  font-size: 28px;
-  line-height: 31px;
-  height: 50px;
-}
-
-.navbar-toggle {
-  position: relative;
-  float: right;
-  margin-right: 15px;
-  padding: 9px 10px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
   background-image: none;
   border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 22px;
+  line-height: 1.42857;
   border-radius: 4px;
 }
 
-.navbar-toggle .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
-}
-
-.navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 4px;
-}
-
-@media (min-width: 768px) {
-  .navbar-toggle {
-    display: none;
-  }
-}
-
-.navbar-nav {
-  margin: 4.75px -15px;
-}
-
-.navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 31px;
-}
-
-@media (min-width: 768px) {
-  .navbar-nav {
-    float: left;
-    margin: 0;
-  }
-
-  .navbar-nav > li {
-    float: left;
-  }
-
-  .navbar-nav > li > a {
-    padding-top: 9.5px;
-    padding-bottom: 9.5px;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar-right {
-    float: right !important;
-    margin-right: -15px;
-  }
-}
-
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.btn-primary {
+  color: #fff;
+  background-color: #4BB5DD;
+  border-color: #36acd9;
 }
 
 @-ms-viewport {
   width: device-width;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
 }
 
 a {
@@ -460,109 +195,23 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
-@media (min-width: 768px) {
-  .navbar-nav > li {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-  }
+.btn-primary {
+  background: #4BB5DD;
+  color: #FFF;
+  font-family: Lato;
+  letter-spacing: 0.7px;
+  border: none;
 }
 
-.bio-img img {
-  width: 300px;
-  height: 300px;
-}
-
-#info .container {
-  border-bottom: 1px solid #efefef;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-#staff {
-  padding-top: 50px;
+.btn {
+  border-radius: 5px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: .5em 1em;
 }
 
 body {
   font-size: 22px;
-}
-
-#header-title h1 {
-  font-family: inherit;
-  font-weight: 300;
-  line-height: 1.1;
-  color: #555555;
-  margin-top: 31px;
-  margin-bottom: 15.5px;
-}
-
-@media (max-width: 991px) {
-  #header-title h1 {
-    line-height: 50px;
-  }
-}
-
-#header-title .container {
-  border-bottom: 1px solid #efefef;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-.navbar .icon-bar {
-  width: 33px;
-  height: 4px;
-  border-bottom: 3px solid #fff;
-}
-
-.navbar.hero {
-  margin: 0px;
-  border-radius: 0px;
-  border: 0px;
-  z-index: 999;
-  background-color: #72C8E9;
-  padding: .5em 0em;
-  padding-bottom: 0px;
-  -webkit-font-smoothing: antialiased;
-}
-
-@media (min-width: 768px) {
-  .navbar.hero .navbar-nav > .active > a {
-    color: #fff;
-  }
-}
-
-.navbar.hero .navbar-brand {
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.5em;
-  font-family: "Lato", "Helvetica Neue", Arial;
-}
-
-.navbar.hero .navbar-nav > li > a {
-  color: #fff;
-  font-size: 1em;
-  padding: 15px 20px;
-  font-weight: 300;
-}
-
-.navbar.hero .navbar-nav > li.contact {
-  background-color: #FFCC4F;
-  border-radius: 5px;
-  font-weight: 500;
-  margin-right: 10px;
-  text-transform: uppercase;
-}
-
-@media (max-width: 767px) {
-  .navbar.hero .navbar-nav > li.contact {
-    margin: 0;
-    border-radius: 0;
-  }
-}
-
-.navbar.hero .navbar-nav > li.contact > a {
-  padding: 5px 10px;
-  color: #333;
 }
 
       </style>
@@ -574,7 +223,7 @@ body {
 <body class="about">
   <noscript id="deferred-styles">
     
-      <link rel="stylesheet" type="text/css" href="styles/main.css?1484607764245">
+      <link rel="stylesheet" type="text/css" href="styles/main.css?1485984776515">
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic">
     
   </noscript>
@@ -696,6 +345,7 @@ body {
     </a>
   </div>
   <h3 class="text-center">Alec Reynolds</h3>
+  <h5 class="text-center">CEO & Senior Developer</h5>
   <div class="text-justify bio-content"><p>Alec is a digital solutions consultant who helps organization get more value from their software projects. His digital agency background gave Alec the opportunity to experience a variety of strategies for managing web application projects and made him an ardent student of lean business development, agile project management, and continuous delivery methodologies.</p>
 <p>When he&#39;s not collecting new tools and tricks of the trade, you can find him either running or hiking on the trails around the San Francisco East Bay, observing local birdlife, and making the odd batch of sauerkraut.</p>
 </div>
@@ -709,9 +359,29 @@ body {
     </a>
   </div>
   <h3 class="text-center">Mike Pirog</h3>
-  <div class="text-justify bio-content"><p>Mike is a senior DevOps consultant with over a decade of experience finding better ways to make and deliver web applications. Unlike many engineers, Mike has the rare ability to recognize business value as the foremost concern in determining the solution to any software problem.</p>
+  <h5 class="text-center">Senior Engineer</h5>
+  <div class="text-justify bio-content"><p>Mike is an architect, developer, devops expert and tech DOES ALL THE THINGS with over a decade of experience finding better ways to make and deliver web applications. Unlike many engineers, Mike has the rare ability to recognize business value as the foremost concern in determining the solution to any software problem.</p>
 <p>A prolific open source contributor, Mike is the architect behind Kalabox, a Docker-powered tool for local development and continuous integration.</p>
 <p>Away from the monitor, Mike is often found deep in conversation arguing the merits of Gilded Age grooming practices and fleshing out his concept for a Russian-language Weezer coverband.</p>
+</div>
+</div>
+
+          
+            <div class="col-md-6">
+  <div class="bio-img">
+    <a href="https://twitter.com/serundeputy">
+      <img class="center-block img-responsive img-circle img-staff" alt="bio-portrait" src="images/gff-sm.jpg" onmouseover="this.src='images/gff_hover.jpg'" onmouseout="this.src='images/gff-sm.jpg'">
+    </a>
+  </div>
+  <h3 class="text-center">Geoff St. Pierre</h3>
+  <h5 class="text-center">Senior Developer</h5>
+  <div class="text-justify bio-content"><p>Geoff is a senior developer with over 20 years of programming experience.
+This gives him perspective on both how things were and how things are and more importantly gives him the
+foundation to chase the latest and greatest technology.</p>
+<p>Geoff is an open source contributor to Backdrop CMS, Backdrop Drush
+extension, Drupal, Kalabox and others.</p>
+<p>Away from the monitor, Geoff can be found playing video games, running, and playing in
+bands such as The Royal We and the_understatements.</p>
 </div>
 </div>
 
@@ -727,20 +397,20 @@ body {
   <div class="container">
     <div class="row stats">
       <div class="col-sm-3">
-        <strong>13.2K</strong>
+        <strong>15.3K</strong>
         Github contributions
       </div>
       <div class="col-sm-3">
-        <strong>23</strong>
+        <strong>25</strong>
         languages coded
       </div>
       <div class="col-sm-3">
-        <strong>57</strong>
+        <strong>60</strong>
         talks given
       </div>
       <div class="col-sm-3">
-        <strong>71</strong>
-        liters homebrewed sauerkraut
+        <strong>3</strong>
+        singer/songwriters
       </div>
     </div>
   </div>
@@ -823,7 +493,7 @@ body {
   
 
   
-    <script src="js/scripts.js?1484607764254"></script>
+    <script src="js/scripts.js?1485984776540"></script>
     
     <script type="application/ld+json">
       [{"@context":"http://schema.org","@type":"WebSite","name":"Tandem","alternateName":"The site for Tandem, a software strategy firm.","url":"http://www.thinktandem.io"},{"@context":"http://schema.org","@type":"Organization","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]},{"@context":"http://schema.org/","@type":"Person","name":"Alec Reynolds","jobTitle":"Co-founder","url":"http://alecreynolds.com","sameAs":["https://www.facebook.com/reynolds.alec","https://www.linkedin.com/in/alecreynolds","https://twitter.com/reynoldsalec","https://plus.google.com/107357940623696299441","https://github.com/reynoldsalec"]},{"@context":"http://schema.org/","@type":"Person","name":"Mike Pirog","jobTitle":"Co-founder","sameAs":["https://www.facebook.com/michael.pirog.96","https://www.linkedin.com/in/mike-pirog-8184a38","http://twitter.com/pirogcommamike","https://plus.google.com/113374746720613799894","https://github.com/pirog"]}]

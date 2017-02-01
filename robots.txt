@@ -13,5 +13,6 @@ Disallow: services/testing/index.html
 Disallow: services/training/index.html
 Disallow: staff/pirog/index.html
 Disallow: staff/reynolds/index.html
+Disallow: staff/stpierre/index.html
 Disallow: trainings/continuous-integration-san-diego/index.html
 Sitemap: http://www.thinktandem.io/sitemap.xml
