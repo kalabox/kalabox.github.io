@@ -18,12 +18,14 @@
     <![endif]-->
 
   <title>
-    Tandem | 
+    
+  Tandem | Connecting to a Remote Platform.sh Database | Connecting to a Remote Platform.sh Database | 
+
   </title>
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="http://www.thinktandem.io/topics/strategy/2/index.html/" />
-  <meta property="og:url" content="http://www.thinktandem.io/topics/strategy/2/index.html/" />
-  <meta property="og:title" content="" />
+  <link rel="canonical" href="http://www.thinktandem.io/blog/2017/03/03/connecting-to-a-remote-platform-sh-database/" />
+  <meta property="og:url" content="http://www.thinktandem.io/blog/2017/03/03/connecting-to-a-remote-platform-sh-database/" />
+  <meta property="og:title" content="Connecting to a Remote Platform.sh Database" />
   
   <meta property="og:type" content="website" />
   
@@ -574,7 +576,7 @@ body {
 <body class="">
   <noscript id="deferred-styles">
     
-      <link rel="stylesheet" type="text/css" href="styles/main.css?1488925556443">
+      <link rel="stylesheet" type="text/css" href="styles/main.css?1488925556191">
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic">
     
   </noscript>
@@ -657,91 +659,170 @@ body {
     
   
 
-  <div id="info">
-    <div class="container">
-      <div class="row header">
-        <div class="col-md-12 text-center">
-          <h1>Posts about strategy</h1>
-          <small>We've been revealing truth since the Permian extinction. <a href="http://eepurl.com/caz4hn">Sign up</a> to receieve an email whenever we post something in the blog and never miss an update.
-        </div>
-      </div>
-    </div>
-  </div>
+  <article id="article">
 
-  <div id="tags">
-  <div class="container border-bottom">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        
-          <span class="label label-primary"><a href="/topics/deployment" title="deployment">deployment</a></span>
-        
-          <span class="label label-primary"><a href="/topics/docker" title="docker">docker</a></span>
-        
-          <span class="label label-primary"><a href="/topics/hosting" title="hosting">hosting</a></span>
-        
-          <span class="label label-primary"><a href="/topics/localdev" title="localdev">localdev</a></span>
-        
-          <span class="label label-primary"><a href="/topics/misc" title="misc">misc</a></span>
-        
-          <span class="label label-primary"><a href="/topics/scaling" title="scaling">scaling</a></span>
-        
-          <span class="label label-primary"><a href="/topics/strategy" title="strategy">strategy</a></span>
-        
-          <span class="label label-primary"><a href="/topics/support" title="support">support</a></span>
-        
-          <span class="label label-primary"><a href="/topics/training" title="training">training</a></span>
-        
-          <span class="label label-primary"><a href="/topics/testing" title="testing">testing</a></span>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  <div id="posts">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          
-            <div class="teaser">
-  <div class="row post">
-    <div class="col-md-2">
-      <div class="author">
-        <img src="images/authors/teaser/alec-reynolds.jpg" class="avatar" alt="author" />
-      </div>
-    </div>
-    <div class="col-md-10">
-
-      <div class="title">
-        <a href="blog/2016/09/10/let-s-get-small-introduction-to-microservices">Let&#39;s Get Small: Introduction to Microservices</a>
-      </div>
-
-      <div class="author">
-        Alec Reynolds, September 10th 2016
-      </div>
-
-      <p class="intro">
-        In software development, things change. Learn how a microservice architecture can help you adapt to changing requirements and scale applications in the cloud.
-      </p>
-
-      <a href="blog/2016/09/10/let-s-get-small-introduction-to-microservices" class="continue-reading">Continue reading this post</a>
-
-    </div>
-  </div>
-</div>
-
-          
-          <div class="pages">
-            <ul class="pagination">
-              
-              
-            </ul>
+    <div id="header-title">
+      <div class="container">
+        <div class="row header">
+          <div class="col-md-12 text-center">
+            <h1>Connecting to a Remote Platform.sh Database</h1>
+            <small>by <img class="avatar" src="images/authors/teaser/geoff-st-pierre.jpg" alt="author" /> Geoff St. Pierre on March 3rd 2017</small>
           </div>
         </div>
       </div>
     </div>
+
+    
+      <div id="main-pic">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="images/articles/connect-to-sequel-pro.png" class="img-responsive blog-main-image" alt="blogpost" />
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <div id="page-content">
+      <div class="container">
+        <p>It&#39;s not complicated to connect to a platform.sh database; here&#39;s how!</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>A database management application. I will use <a href="https://www.sequelpro.com/">Sequel Pro</a> in this post.</li>
+<li>Set up a site on <a href="https://platform.sh/">platform.sh</a>.<ul>
+<li>Add your <a href="https://docs.platform.sh/development/ssh.html">ssh-key</a> to your account settings.</li>
+</ul>
+</li>
+</ul>
+<h2 id="instructions">Instructions</h2>
+<p>Open up Sequel Pro and click the <code>+</code> in the bottom left corner to create a new connection. You will be prompted for connection settings. At the top there are three tabs. Each type of connection prompts for different settings. Select the <code>ssh</code> tab for a platform.sh connection.</p>
+<center>
+  <img alt="sequel-pro-connection-screen" src="images/articles/sqp-connect.png" width="433" align="center" />
+</center>
+
+<p>Let&#39;s break down the rest of the settings.</p>
+<ul>
+<li><code>Name:</code><ul>
+<li>This can be anything that describes the database you are connecting to. I usually stick to the format: Example Site - Test.</li>
+</ul>
+</li>
+<li><code>MySQL Host:</code><ul>
+<li>This will literally be the string <code>database.internal</code></li>
+</ul>
+</li>
+<li><code>Username:</code><ul>
+<li>Literally <code>user</code></li>
+</ul>
+</li>
+<li><code>Password:</code><ul>
+<li>leave empty</li>
+</ul>
+</li>
+<li><code>Database:</code><ul>
+<li>Literally <code>main</code></li>
+</ul>
+</li>
+<li><code>Port:</code><ul>
+<li>leave empty</li>
+</ul>
+</li>
+</ul>
+<p>The rest of the settings can easily be obtained through the ssh connection string provided by platform.  To get the string, login to platform.sh, choose your project, hover over the <code>Access site</code> link, and copy the <code>SSH ACCESS</code> string to your clipboard.</p>
+<ul>
+<li><code>SSH Host:</code><ul>
+<li>The part of the string after the @ <code>ssh.us.platform.sh</code></li>
+</ul>
+</li>
+<li><code>SSH User:</code><ul>
+<li>This is the part of the string before the @ it consists of the platform site ID and the environment.</li>
+</ul>
+</li>
+<li>Leave the rest of the settings blank but make sure the <code>Connect using SSL</code> box is checked.</li>
+</ul>
+<p>Sequel Pro should pick up your public key from your computer but if it can&#39;t you can browse to your public key to explicitly point to it (usually in <code>~/.ssh/</code>).</p>
+<p>That&#39;s it!  Click <code>Test Connection</code> if it connects hit <code>Save changes</code> then <code>Connect</code>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>You now have a new favorite in your Sequel Pro sidebar that you can use to connect to your Platform.sh environment anytime you need it.</p>
+
+      </div>
+    </div>
+
+    <div id="email-subscribe">
+      <div class="container text-center">
+        <a href="http://eepurl.com/caz4hn">
+          <i class="fa fa-envelope"></i>
+          Click here to get instant notifications on all our most recent posts
+          <i class="fa fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+  </article>
+
+  <div id="recent-posts">
+  <div class="container">
+    <div class="row header text-center">
+      <h3>Read some other awesome Tandem adventures</h3>
+    </div>
+    
+      <div class="col-md-4">
+        <div class="recent">
+
+          <div class="title">
+            <a href="blog/2017/03/03/connecting-to-a-remote-platform-sh-database">Connecting to a Remote Platform.sh Database</a>
+          </div>
+
+          <div class="author">
+            <img src="images/authors/teaser/geoff-st-pierre.jpg" class="avatar" alt="author" />Geoff St. Pierre, March 3rd 2017
+          </div>
+
+          <p class="intro">
+            Connecting to a remote Database on platform.sh is simple (when you know how)!
+          </p>
+
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="recent">
+
+          <div class="title">
+            <a href="blog/2016/12/31/visiting-dependency-hell">Visiting Dependency Hell</a>
+          </div>
+
+          <div class="author">
+            <img src="images/authors/teaser/alec-reynolds.jpg" class="avatar" alt="author" />Alec Reynolds, December 31st 2016
+          </div>
+
+          <p class="intro">
+            A brief vacation to one of software development&#39;s notorious infernos reminded me why containers, Docker, and Kalabox are the way to manage development dependencies.
+          </p>
+
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="recent">
+
+          <div class="title">
+            <a href="blog/2016/11/08/goodbye-virtualbox-kalabox-2-1-1">Goodbye VirtualBox: Kalabox 2.1.1</a>
+          </div>
+
+          <div class="author">
+            <img src="images/authors/teaser/mike-pirog.jpg" class="avatar" alt="author" />Mike Pirog, November 8th 2016
+          </div>
+
+          <p class="intro">
+            With our newest version of Kalabox, we say goodbye to VirtualBox and hello to better performance and stability with Docker for Mac and Windows.
+          </p>
+
+        </div>
+      </div>
+    
+    </div>
   </div>
+</div>
 
   <div id="cta">
   <div class="container social">
@@ -807,10 +888,10 @@ body {
   
 
   
-    <script src="js/scripts.js?1488925556448"></script>
+    <script src="js/scripts.js?1488925556199"></script>
     
     <script type="application/ld+json">
-      [{"@context":"http://schema.org","@type":"WebSite","name":"Tandem","alternateName":"The site for Tandem, a software strategy firm.","url":"http://www.thinktandem.io"},{"@context":"http://schema.org","@type":"Organization","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]}]
+      [{"@context":"http://schema.org","@type":"WebSite","name":"Tandem","alternateName":"The site for Tandem, a software strategy firm.","url":"http://www.thinktandem.io"},{"@context":"http://schema.org","@type":"Organization","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Connecting to a Remote Platform.sh Database","alternativeHeadline":"Connecting to a remote Database on platform.sh is simple (when you know how)!","image":"images/articles/connect-to-sequel-pro.png","keywords":["localdev","hosting"],"publisher":{"@context":"http://schema.org","@type":"Organization","name":"Kalabox Inc. DBA Tandem","url":"http://www.thinktandem.io","logo":"http://www.thinktandem.io/images/favicon.png","sameAs":["https://www.linkedin.com/company/think-tandem","https://twitter.com/thinktandem"]},"datePublished":"2017-03-03T00:00:00.000Z","dateCreated":"2017-03-03T00:00:00.000Z","description":"Connecting to a remote Database on platform.sh is simple (when you know how)!","author":{"@type":"Person","name":"author"}}]
     </script>
     
     <script>
