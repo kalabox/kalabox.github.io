@@ -3,7 +3,7 @@ Disallow: 404.html
 Disallow: contact-thanks.html
 Disallow: blog/2016/09/10/let-s-get-small-introduction-to-microservices/index.html
 Disallow: blog/2016/09/23/node-microservices-on-docker-cloud/index.html
-Disallow: careers/juniordev/index.html
+Disallow: careers/laraveldev/index.html
 Disallow: quotes/chesney/index.html
 Disallow: quotes/koenig/index.html
 Disallow: services/hosting/index.html
